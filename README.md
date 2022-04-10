@@ -1,9 +1,17 @@
 # SOA Case Study 2022: Rarita's National Football Team ⚽
 ![](giphy.gif)
 
-_"Tell me and I forget. Teach me and I remember. Involve me and I learn" - Benjamin Franklin_
-
 ---
+## Project Outline
+--
+## Team Selection
+--
+## Implementation Plan
+--
+## Economic Impact
+--
+## Risk Considerations
+
 
 ### Congrats on completing the [2022 SOA Research Challenge](https://www.soa.org/research/opportunities/2022-student-research-case-study-challenge/)!
 
