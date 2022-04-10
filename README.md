@@ -3,15 +3,23 @@
 
 ---
 ## Project Outline
---
+
+The goal of this assignment was to formulate a comprehensive plan for Rarita (a fictional country) to construct an internationally competitive football team. Criteria for a "competitive" team was defined as:
+1. Rank within the top 10 members of the FSA for the season within the next 5 years.
+2. Have a high probability of achieving an FSA championship within the next 10 years.
+
+The potential economic impacts of the team were also assessed, and given the uncertainty involved in such a venture, a thorough risk analysis was conducted, highlighting the key risks, impacts, and potential risk mitigation measures. 
+
 ## Team Selection
---
+@ Callum
 ## Implementation Plan
---
+@
 ## Economic Impact
---
+
 ## Risk Considerations
 
+
+@ Mitch
 
 ### Congrats on completing the [2022 SOA Research Challenge](https://www.soa.org/research/opportunities/2022-student-research-case-study-challenge/)!
 
