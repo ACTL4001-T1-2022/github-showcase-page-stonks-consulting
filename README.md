@@ -1,4 +1,4 @@
-# Actuarial Theory and Practice A
+# SOA Case Study 2022: Rarita's National Football Team ⚽
 
 _"Tell me and I forget. Teach me and I remember. Involve me and I learn" - Benjamin Franklin_
 
