@@ -10,8 +10,6 @@ The goal of this assignment was to formulate a comprehensive plan for Rarita (a 
 
 The potential economic impacts of the team were also assessed, and given the uncertainty involved in such a venture, a thorough risk analysis was conducted, highlighting the key risks, impacts, and potential risk mitigation measures. 
 
-![](giphy.gif)
-
 ## Team Selection
 Our team selection methodology aims to achieve Commissioner Bayes objectives by developing a tool that identifies the best team and can be implemented continuously throughout the next ten years. Our tool calculates the projected individual quality of players (called the “Individual Metric”) and then selects players to form the best team (by maximising the “Team Metric”). 
 
