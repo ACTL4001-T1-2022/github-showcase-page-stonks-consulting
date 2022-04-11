@@ -186,7 +186,7 @@ Benchmarked against data from global industry markets, we calculated the added i
 #### **Population Growth**
 - We have used an ARIMA(0, 2, 2) model based on Holt's linear trend (double exponential smoothing) method to forecast population growth to 2030. 
 
-<img width="912" alt="newplot (15)" src="https://user-images.githubusercontent.com/103188193/162724240-eea9a089-8f22-409a-b28d-9e5ae678c1f5.png">
+<img width="245" alt="newplot (20)" src="https://user-images.githubusercontent.com/103188193/162736934-03ba23cd-894e-452b-bacd-4b6c1cf27868.png">
 
 - As the population of Rarita is clearly an upward trending function, the Holt's linear trend helps in dealing with this trending data. The ACF spike at lag 0 further supports the case for a ARIMA(0, 2, 2) model.
 
