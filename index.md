@@ -14,8 +14,9 @@ The potential economic impacts of the team were also assessed, and given the unc
 @ Callum
 ## Implementation Plan
 
-# Revenues & Expenses
+### Revenues & Expenses
 **Matchday**
+
 We hope to make revenue from selling memberships and season ticket passes to supporters. From the outset, the aim is to sell memberships cheaper to appeal to the masses (Central/West Rarita). As the team becomes more competitive and more popular, the memberships should increase and as such we can adequately monitor and optimise the price to maximise revenue using economic modelling. 
 
 @ Prav and Yatty
