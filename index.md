@@ -27,7 +27,12 @@ Finding sponsorships allows private investment into the team and provides the te
 
 The aim is to sell rights of broadcasting Rarita games to television companies on small-term contracts. Then, as the popularity and competitive nature of the team increases, we expect to sign longer-term contracts for higher deals. This is the biggest revenue stream we expect. 
 
-@ Prav and Yatty
+**Social Media**
+
+While our largest sources of revenue will be broadcasting rights and sponsorships, we expect social media to play a large role in popularizing Rarita’s team. This is evident in the correlation between a team’s past success and its social media following. Initiatives such as player interviews, behind the scene insights and matchday reviews led by a dedicated social media team will enhance fan following and encourage matchday attendance, whilst maintaining key sponsors. Additional revenue from a strong social media may be reinvested in supporting associated industries such as tourism and hospitality. 
+
+Estimated revenues and expenses on a yearly timeline are outlined below (all values expressed as Rarita Doubloons per capita)
+
 Year | Matchday | Sponsor | Broadcast | Staff | Other | UIUD Profit | **Expected Profit**
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 1 | 25.00 | 78.00 | 72.00 | -98.25 | -50.44 | 26.31 | **27.23**
