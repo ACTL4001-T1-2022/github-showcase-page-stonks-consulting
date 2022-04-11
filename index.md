@@ -29,7 +29,20 @@ Year | Matchday | Sponsor | Broadcast | Staff | Other | UIUD Profit | **Expected
 
 
 ## Economic Impact
-@ Karina
+GDP per Capita projected using Monte-Carlo simulations will have a $23.7bn growth by the end of 10 years, reaching $35,300 by 2030/
+![image](https://user-images.githubusercontent.com/103412094/162695133-dd2563f5-4476-4965-81ad-88ecb0c5e68e.png)
+GNI per Capita projected using Monte-Carlo simulations, will grow to $39,900 by 2030.
+
+![image](https://user-images.githubusercontent.com/103412094/162695164-72f16ad2-7b69-40cc-b25c-c07e90a651c3.png)
+Household Savings and Health Expenditure expected to remain flat through the next 10 years, impacts resulting from the implementation plan will be immaterial.
+
+Inflation is expected to increase in 2021 in the aftermath of the pandemic. Using an ARMA model, it gradually subsides to the long term average: 3%.
+
+Related industries positively impacted include the sports betting, manufacturing, hospitality, tourism and transport industries.
+![image](https://user-images.githubusercontent.com/103412094/162695185-7aee5a5c-c929-44f7-84bb-b03a478cba4a.png)
+Unemployment Rate historically was estimated to be approx. 6.5% and projections are stable with unemployment gradually declining to 5%. 
+![image](https://user-images.githubusercontent.com/103412094/162695357-1fdb9a12-b4ab-4a37-b0a2-1b7b0155edd7.png)
+
 ## Risk Considerations
 Forming a competative football team is a difficult undertaking and is subject to a broad range of risks. A risk analysis was completed to identify key risks faced by the team, the potential impact, and measures to mitigate the risk. 
 #### Player Misconduct. 
