@@ -139,7 +139,7 @@ To measure the long-term financial sustainability of Rarita’s club, we monitor
 
 ## Economic Impact
 
-#### **GDP per Capita**
+**GDP per Capita**
 - Projected using Monte-Carlo simulations 
 - $23.7bn expected growth by the end of 10 years 
 - Expected to reach $35,300 by 2030
@@ -147,30 +147,30 @@ To measure the long-term financial sustainability of Rarita’s club, we monitor
 <img width="510" alt="Screen Shot 2022-04-11 at 6 52 18 pm" src="https://user-images.githubusercontent.com/103412094/162703270-07b8e7f9-2a13-4417-915c-ae579d87e62a.png">
 
 
-#### **GNI per Capita**
+**GNI per Capita**
 - Projected using Monte-Carlo simulations
 - Expected to grow to $39,900 by 2030
 <img width="552" alt="Screen Shot 2022-04-11 at 6 53 00 pm" src="https://user-images.githubusercontent.com/103412094/162703282-256f6d9a-570f-411b-b456-b8c369c7d3d2.png">
 
 
-#### **Household Savings and Health Expenditure** 
+**Household Savings and Health Expenditure** 
 - Expected to remain mostly flat through the next 10 years
 - As Rarita's economy matures, it will shift to from producing goods to services, thus expanding its financial sector. Due to Rarita's maturing financial sector, the household savings rate will grow slightly approaching 9% by 2030.
 - Impacts resulting from the implementation plan will be immaterial
 
-#### **Inflation**
+**Inflation**
 - Expected to increase in 2021 in the aftermath of the pandemic 
 - Using an ARMA model, it gradually subsides to the long term average: 3%
 
 <img width="432" alt="Screen Shot 2022-04-11 at 7 10 28 pm" src="https://user-images.githubusercontent.com/103412094/162704200-b4056f38-f615-49f9-8288-96239efee40d.png">
 
 
-#### **Unemployment Rate** 
+**Unemployment Rate** 
 - Historically was estimated to be approx. 6.5%
 - Projections are stable with unemployment gradually declining to 5% 
 
 
-#### **Related industries**
+**Related industries**
 
 Benchmarked against data from global industry markets, we calculated the added impact on CAGR, from Rarita’s football team. The industries positively impacted include:
 - Sports betting (4.92% CAGR)
@@ -179,11 +179,11 @@ Benchmarked against data from global industry markets, we calculated the added i
 - Tourism (5.05% CAGR)
 - Transport (1.93% CAGR)
 
-## Modelling and Assumptions
+## Methodology, Modelling and Assumptions
 
-### **Economic Metrics**
+#### **Economic Metrics**
 
-#### **Population Growth**
+**Population Growth**
 - We have used an ARIMA(0, 2, 2) model based on Holt's linear trend (double exponential smoothing) method to forecast population growth to 2030. 
 
 <img width="245" alt="newplot (20)" src="https://user-images.githubusercontent.com/103188193/162736934-03ba23cd-894e-452b-bacd-4b6c1cf27868.png">
@@ -198,13 +198,13 @@ Benchmarked against data from global industry markets, we calculated the added i
 
 - Overall, football is likely to have a negligible impact on population growth. 
 
-#### **GDP per Capita**
+**GDP per Capita**
 - The Monte Carlo method assumes that year-on-year GDP per Capita growth is a normally distributed random variable ~ N(0.02745, 0.00115).
 
-#### **GNI per Capita**
+**GNI per Capita**
 - The Monte Carlo method assumes that year-on-year GDP per Capita growth is a normally distributed random variable ~ N(0.02273, 0.00121).
 
-#### **Inflation Rate**
+**Inflation Rate**
 - We have selected an ARMA(1, 1) model based on the Akaike Information Criterion (AIC). The heatmap below shows the p and q values (x and y-axes respectively) for which the AIC is minimised. 
 
 ![newplot (13)](https://user-images.githubusercontent.com/103188193/162727183-7e438ea1-83ca-4463-96c0-400617d24daa.png)
@@ -213,13 +213,13 @@ Benchmarked against data from global industry markets, we calculated the added i
 
  ![newplot](https://user-images.githubusercontent.com/103188193/162727554-70c39490-ddef-49e0-acfa-2fe95744cc9a.png)
 
-#### **Unemployment Rate**
+**Unemployment Rate**
 - This metric was not provided in the Rarita Data. However we believe it is an important metric to monitor in relation to Rarita’s football plans as it plays a major role in developing Rarita's industries, education sector as well as sociodemographics. 
 - To proxy Rarita's unemployment rate, we utilised external World Bank data on selected regions and income groups. We have selected regions and income groups rather than individual countries as we believe the larger sample size incorporated into the data allows for more reliable models to be developed. 
 - A linear regression is conducted on the various regions and income groups using explanatory variable GDP per Capita growth, Inflation, Healthcare Expenditure and Household Savings.
 - Individual models were then fitted on Rarita's economic data to arrive as a proxy unemployment rate. As such the assumption is that the coefficients of the fitted models reflect those of Rarita and that the dynamics driving the economy (and by extension unemployment) in the two are similar. 
 - Linear regression models fitted on World and OECD members groups demonstrated the best ability to predict unseen data. 
-- 
+
 |![Picture4](https://user-images.githubusercontent.com/103188193/162737943-29cf35a1-57aa-4acb-92e6-11b2edd1c962.png)|![Picture5](https://user-images.githubusercontent.com/103188193/162738002-79a6582f-cc16-4914-9cbd-8f2b44cb1b6b.png)|
 
 - Rarita's economic metrics align more closely World group and the OECD member group's R-squared highlights a superior fit. 
@@ -235,17 +235,17 @@ Benchmarked against data from global industry markets, we calculated the added i
 
 ![Picture3](https://user-images.githubusercontent.com/103188193/162738510-5c5de382-f072-4bcd-a3a1-49a48ebe6c7a.png)
 
-#### **Healthcare Expenditure and Household savings**
+**Healthcare Expenditure and Household savings**
 - Initially, a Vector Autoregression (VAR) model was considered such that the variables GDP per Capita growth, Inflation, Unemployment Rate, Healthcare Expenditure and Household Savings could be used in a multivariate setting to predict one another. The model however is overly complicated and while performing well on the training data shows overfitting when applied to the test dataset. It is therefore unreliable in projecting the variables listed above. 
 - As such, we have only projected healthcare expenditure and household savings using the VAR models that were selected in Excel.
 - Models fitted on World Bank data are tested on the unseen Rarita data which acts as a test set. Overall the World, upper-middle income and OECD members groups' models are able to accurately predict Rarita's historic healthcare expenditure and household savings. 
-- A simple average is taken to fit to Rarita historicals and project future rates. 
+- A simple average between the model above is taken to fit to Rarita historicals and project future rates. 
 
 |![Picture1](https://user-images.githubusercontent.com/103188193/162738608-c0c3d35b-c782-4081-bd46-f9c114010335.png)|![Picture2](https://user-images.githubusercontent.com/103188193/162738638-bcd0b01f-3770-4325-87f1-24bafb9688d9.png)|
 
 ## Risk Considerations
 Forming a competative football team is a difficult undertaking and is subject to a broad range of risks. A risk analysis was completed to identify key risks faced by the team, the potential impact, and measures to mitigate the risk. 
-#### Player Misconduct. 
+**Player Misconduct**
 Anti-social behaviour (both on and off-field) represented a considerable financial (quantitative) and reputation (qualitative) risk to Rarita. Experience from other sporting codes suggested the likelihood of severe misconduct by a player within the team is likely within the next 5 years. An incident could impact:
 * Sponsor share prices. 
 * Broadcasting revenue.
@@ -254,7 +254,7 @@ Anti-social behaviour (both on and off-field) represented a considerable financi
 
 Transfering or removing this risk was not possible. However, establishing a strict Player Code of Conduct (with enforceable penalties) to govern on and off-field behaviour was advised as a means to mitigate the risk. This would aid in reducing the frequency and severity of incidents. 
 
-#### Poor Public Opinion
+**Poor Public Opinion**
 Though difficult to quantify, a lack of public support for Rarita’s national team and the investment would have considerable economic and political consequences for Rarita, and was identifed as another key risk. 
 Potential impacts could be:
 * Social and Politcal Unrest.
