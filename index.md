@@ -23,7 +23,7 @@ An Answer Set Programming ([Cringo](https://potassco.org/clingo/run/)) approach 
 
 As shown above, the best team is formed under a 4-3-3 formation and the players selected are:
 
-|**Player**|**Position**|**Individual Metric**|**Chemistry Adjusted Metric**|**Salary + Loan Fee**|
+|**Player**|**Position**|**Individual Metric**|**Chemistry Adjusted Metric**|**Salary + Loan Fee (∂)**|
 |:---|:---|:---|:---|:---|
 |F. Akumu|GK|857|892|5,600,000|
 |C. Kakayi|DF|523|544|7,308,400|
@@ -45,9 +45,9 @@ In relation to implementation, we deconstructed Commissioner Bayes objectives in
 
 |            **Problem**               | **Designed Solution**              |
 | :----------------------------------- | :--------------------------------- |
-| Which players should be loaned?      | Players that:<ul><li>increase/are expected to increase the “Team Metric”</li><li>play in leagues “A”,”B”,”C” or RFL</li><li>have played more than 3 league games</li><li>are within the required age range for a particular team</li></ul> | 
+| Which players should be loaned?      | Players that: increase/are expected to increase the “Team Metric”, play in leagues “A”,”B”,”C” or "RFL", have played more than 3 league games, are within the required age range for a particular team | 
 | When should players be loaned?       | Whenever financially and logistically possible |
-| Which players should be loaned out?  | Players that:<ul><li>are underperforming compared to their projected Individual Metric</li><li>are older than 29 years old</li><li>can be replaced by another player that increases the Team Metric</li></ul>|
+| Which players should be loaned out?  | Players that: are underperforming compared to their projected Individual Metric, are older than 29 years old, can be replaced by another player that increases the Team Metric|
 | When should players be loaned out?   | Whenever logistically possible |
 
 
