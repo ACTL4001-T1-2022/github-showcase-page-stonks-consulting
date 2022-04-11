@@ -99,6 +99,9 @@ and Health Expenditure expected to remain flat through the next 10 years, impact
 **Inflation**
 is expected to increase in 2021 in the aftermath of the pandemic. Using an ARMA model, it gradually subsides to the long term average: 3%.
 
+<img width="432" alt="Screen Shot 2022-04-11 at 7 10 28 pm" src="https://user-images.githubusercontent.com/103412094/162704200-b4056f38-f615-49f9-8288-96239efee40d.png">
+
+
 **Unemployment Rate** historically was estimated to be approx. 6.5% and projections are stable with unemployment gradually declining to 5%. 
 
 
