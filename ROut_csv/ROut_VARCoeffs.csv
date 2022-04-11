@@ -1,0 +1,451 @@
+﻿,Country,Coeff,Model
+GDP.per.capita.l1,World,0.274608961,GDP
+Health.Expenditure.l1,World,1.613545513,GDP
+Inflation.l1,World,-0.364320607,GDP
+Unemployment.Rate.l1,World,1.822286118,GDP
+Household.Savings.l1,World,-0.173055133,GDP
+const,World,-0.186270284,GDP
+GDP.per.capita.l11,World,-0.052192022,Health Expenditure
+Health.Expenditure.l11,World,0.4544561,Health Expenditure
+Inflation.l11,World,0.013325975,Health Expenditure
+Unemployment.Rate.l11,World,-0.301739762,Health Expenditure
+Household.Savings.l11,World,0.015267438,Health Expenditure
+const1,World,0.065812954,Health Expenditure
+GDP.per.capita.l12,World,0.692657506,Inflation
+Health.Expenditure.l12,World,1.944596496,Inflation
+Inflation.l12,World,0.201148165,Inflation
+Unemployment.Rate.l12,World,-5.75144074,Inflation
+Household.Savings.l12,World,-1.109168857,Inflation
+const2,World,0.445338045,Inflation
+GDP.per.capita.l13,World,-0.062242985,Unemployment Rate
+Health.Expenditure.l13,World,-0.195722226,Unemployment Rate
+Inflation.l13,World,0.037752024,Unemployment Rate
+Unemployment.Rate.l13,World,0.599167242,Unemployment Rate
+Household.Savings.l13,World,-0.024702474,Unemployment Rate
+const3,World,0.047316043,Unemployment Rate
+GDP.per.capita.l14,World,0.098645129,Household Savings
+Health.Expenditure.l14,World,1.249169597,Household Savings
+Inflation.l14,World,-0.09591459,Household Savings
+Unemployment.Rate.l14,World,1.408679113,Household Savings
+Household.Savings.l14,World,0.954213864,Household Savings
+const4,World,-0.183424656,Household Savings
+GDP.per.capita.l152,Upper middle income,0.124436232,GDP
+Health.Expenditure.l152,Upper middle income,-12.11198475,GDP
+Inflation.l152,Upper middle income,-0.776659061,GDP
+Unemployment.Rate.l152,Upper middle income,7.352421468,GDP
+Household.Savings.l152,Upper middle income,0.092872319,GDP
+const52,Upper middle income,0.286925417,GDP
+GDP.per.capita.l1116,Upper middle income,-0.031376737,Health Expenditure
+Health.Expenditure.l1116,Upper middle income,0.668399886,Health Expenditure
+Inflation.l1116,Upper middle income,0.045283363,Health Expenditure
+Unemployment.Rate.l1116,Upper middle income,-0.128647298,Health Expenditure
+Household.Savings.l1116,Upper middle income,0.019051239,Health Expenditure
+const116,Upper middle income,0.01873349,Health Expenditure
+GDP.per.capita.l1214,Upper middle income,0.483716237,Inflation
+Health.Expenditure.l1214,Upper middle income,-4.841028102,Inflation
+Inflation.l1214,Upper middle income,-0.310133991,Inflation
+Unemployment.Rate.l1214,Upper middle income,-1.25442956,Inflation
+Household.Savings.l1214,Upper middle income,-0.447737032,Inflation
+const214,Upper middle income,0.513585767,Inflation
+GDP.per.capita.l1314,Upper middle income,-0.002497881,Unemployment Rate
+Health.Expenditure.l1314,Upper middle income,1.332209752,Unemployment Rate
+Inflation.l1314,Upper middle income,0.099771009,Unemployment Rate
+Unemployment.Rate.l1314,Upper middle income,0.137633934,Unemployment Rate
+Household.Savings.l1314,Upper middle income,-0.031936487,Unemployment Rate
+const314,Upper middle income,-0.016441522,Unemployment Rate
+GDP.per.capita.l1414,Upper middle income,-0.070241368,Household Savings
+Health.Expenditure.l1414,Upper middle income,-4.944239552,Household Savings
+Inflation.l1414,Upper middle income,-0.321228475,Household Savings
+Unemployment.Rate.l1414,Upper middle income,1.722766177,Household Savings
+Household.Savings.l1414,Upper middle income,0.860526867,Household Savings
+const414,Upper middle income,0.238976989,Household Savings
+GDP.per.capita.l151,Sub-Saharan Africa,0.053372618,GDP
+Health.Expenditure.l151,Sub-Saharan Africa,2.928057288,GDP
+Inflation.l151,Sub-Saharan Africa,0.188327462,GDP
+Unemployment.Rate.l151,Sub-Saharan Africa,1.575590411,GDP
+Household.Savings.l151,Sub-Saharan Africa,0.082532245,GDP
+const51,Sub-Saharan Africa,-0.264230284,GDP
+GDP.per.capita.l1115,Sub-Saharan Africa,0.048740813,Health Expenditure
+Health.Expenditure.l1115,Sub-Saharan Africa,0.190718463,Health Expenditure
+Inflation.l1115,Sub-Saharan Africa,0.062159516,Health Expenditure
+Unemployment.Rate.l1115,Sub-Saharan Africa,0.344609958,Health Expenditure
+Household.Savings.l1115,Sub-Saharan Africa,-0.011414664,Health Expenditure
+const115,Sub-Saharan Africa,0.020476095,Health Expenditure
+GDP.per.capita.l1213,Sub-Saharan Africa,0.856984071,Inflation
+Health.Expenditure.l1213,Sub-Saharan Africa,0.542932581,Inflation
+Inflation.l1213,Sub-Saharan Africa,0.369710161,Inflation
+Unemployment.Rate.l1213,Sub-Saharan Africa,-0.769557094,Inflation
+Household.Savings.l1213,Sub-Saharan Africa,-0.072348128,Inflation
+const213,Sub-Saharan Africa,0.0513234,Inflation
+GDP.per.capita.l1313,Sub-Saharan Africa,-0.049250969,Unemployment Rate
+Health.Expenditure.l1313,Sub-Saharan Africa,-0.084017963,Unemployment Rate
+Inflation.l1313,Sub-Saharan Africa,0.005738653,Unemployment Rate
+Unemployment.Rate.l1313,Sub-Saharan Africa,0.843489659,Unemployment Rate
+Household.Savings.l1313,Sub-Saharan Africa,-0.036953793,Unemployment Rate
+const313,Sub-Saharan Africa,0.022903569,Unemployment Rate
+GDP.per.capita.l1413,Sub-Saharan Africa,1.255290939,Household Savings
+Health.Expenditure.l1413,Sub-Saharan Africa,5.0122727,Household Savings
+Inflation.l1413,Sub-Saharan Africa,0.531969882,Household Savings
+Unemployment.Rate.l1413,Sub-Saharan Africa,-0.046422846,Household Savings
+Household.Savings.l1413,Sub-Saharan Africa,-0.174007986,Household Savings
+const413,Sub-Saharan Africa,-0.061244743,Household Savings
+GDP.per.capita.l150,South Asia,-0.176239599,GDP
+Health.Expenditure.l150,South Asia,-1.781510104,GDP
+Inflation.l150,South Asia,0.188377977,GDP
+Unemployment.Rate.l150,South Asia,13.29641799,GDP
+Household.Savings.l150,South Asia,0.014141407,GDP
+const50,South Asia,-0.557937307,GDP
+GDP.per.capita.l1114,South Asia,0.040868425,Health Expenditure
+Health.Expenditure.l1114,South Asia,0.585677053,Health Expenditure
+Inflation.l1114,South Asia,0.040705388,Health Expenditure
+Unemployment.Rate.l1114,South Asia,0.07216167,Health Expenditure
+Household.Savings.l1114,South Asia,-0.062316245,Health Expenditure
+const114,South Asia,0.023762729,Health Expenditure
+GDP.per.capita.l1212,South Asia,-0.317320699,Inflation
+Health.Expenditure.l1212,South Asia,-0.344562015,Inflation
+Inflation.l1212,South Asia,-0.593131743,Inflation
+Unemployment.Rate.l1212,South Asia,-10.21758188,Inflation
+Household.Savings.l1212,South Asia,1.169874896,Inflation
+const212,South Asia,0.311047216,Inflation
+GDP.per.capita.l1312,South Asia,0.012867946,Unemployment Rate
+Health.Expenditure.l1312,South Asia,-0.056622512,Unemployment Rate
+Inflation.l1312,South Asia,0.032335695,Unemployment Rate
+Unemployment.Rate.l1312,South Asia,0.723317271,Unemployment Rate
+Household.Savings.l1312,South Asia,-0.043453485,Unemployment Rate
+const312,South Asia,0.025399729,Unemployment Rate
+GDP.per.capita.l1412,South Asia,-0.062194001,Household Savings
+Health.Expenditure.l1412,South Asia,-0.843424256,Household Savings
+Inflation.l1412,South Asia,0.014228936,Household Savings
+Unemployment.Rate.l1412,South Asia,4.229681802,Household Savings
+Household.Savings.l1412,South Asia,0.653419205,Household Savings
+const412,South Asia,-0.078389151,Household Savings
+GDP.per.capita.l140,OECD members,0.124303152,GDP
+Health.Expenditure.l140,OECD members,-1.673617055,GDP
+Inflation.l140,OECD members,-1.249509268,GDP
+Unemployment.Rate.l140,OECD members,1.975374844,GDP
+Household.Savings.l140,OECD members,0.725999073,GDP
+const40,OECD members,-0.077780638,GDP
+GDP.per.capita.l1113,OECD members,-0.064570953,Health Expenditure
+Health.Expenditure.l1113,OECD members,1.202085878,Health Expenditure
+Inflation.l1113,OECD members,0.157895003,Health Expenditure
+Unemployment.Rate.l1113,OECD members,-0.046264125,Health Expenditure
+Household.Savings.l1113,OECD members,0.198985692,Health Expenditure
+const113,OECD members,-0.063318734,Health Expenditure
+GDP.per.capita.l1211,OECD members,0.584761414,Inflation
+Health.Expenditure.l1211,OECD members,-1.249715267,Inflation
+Inflation.l1211,OECD members,-0.195401912,Inflation
+Unemployment.Rate.l1211,OECD members,-1.728130794,Inflation
+Household.Savings.l1211,OECD members,-2.617591115,Inflation
+const211,OECD members,0.849570037,Inflation
+GDP.per.capita.l1311,OECD members,-0.177934857,Unemployment Rate
+Health.Expenditure.l1311,OECD members,0.260407696,Unemployment Rate
+Inflation.l1311,OECD members,0.426814115,Unemployment Rate
+Unemployment.Rate.l1311,OECD members,0.303544619,Unemployment Rate
+Household.Savings.l1311,OECD members,-0.334546097,Unemployment Rate
+const311,OECD members,0.086399213,Unemployment Rate
+GDP.per.capita.l1411,OECD members,0.112591126,Household Savings
+Health.Expenditure.l1411,OECD members,-0.377335606,Household Savings
+Inflation.l1411,OECD members,-0.410747097,Household Savings
+Unemployment.Rate.l1411,OECD members,0.697763487,Household Savings
+Household.Savings.l1411,OECD members,1.031264993,Household Savings
+const411,OECD members,-0.00763517,Household Savings
+GDP.per.capita.l130,North America,0.533042808,GDP
+Health.Expenditure.l130,North America,-1.109215975,GDP
+Inflation.l130,North America,-0.913684703,GDP
+Unemployment.Rate.l130,North America,1.195400057,GDP
+Household.Savings.l130,North America,0.910656279,GDP
+const30,North America,-0.049222266,GDP
+GDP.per.capita.l1112,North America,-0.189772186,Health Expenditure
+Health.Expenditure.l1112,North America,1.132309785,Health Expenditure
+Inflation.l1112,North America,0.216797113,Health Expenditure
+Unemployment.Rate.l1112,North America,-0.050266598,Health Expenditure
+Household.Savings.l1112,North America,0.195690717,Health Expenditure
+const112,North America,-0.050642083,Health Expenditure
+GDP.per.capita.l1210,North America,0.593594808,Inflation
+Health.Expenditure.l1210,North America,-1.085894864,Inflation
+Inflation.l1210,North America,-0.814306179,Inflation
+Unemployment.Rate.l1210,North America,-0.208742308,Inflation
+Household.Savings.l1210,North America,-0.910095487,Inflation
+const210,North America,0.363756467,Inflation
+GDP.per.capita.l1310,North America,-0.428786668,Unemployment Rate
+Health.Expenditure.l1310,North America,0.117197347,Unemployment Rate
+Inflation.l1310,North America,0.306317078,Unemployment Rate
+Unemployment.Rate.l1310,North America,0.06382761,Unemployment Rate
+Household.Savings.l1310,North America,-0.817223174,Unemployment Rate
+const310,North America,0.185689257,Unemployment Rate
+GDP.per.capita.l1410,North America,0.157824318,Household Savings
+Health.Expenditure.l1410,North America,0.001897865,Household Savings
+Inflation.l1410,North America,0.092890186,Household Savings
+Unemployment.Rate.l1410,North America,0.750774565,Household Savings
+Household.Savings.l1410,North America,1.511991148,Household Savings
+const410,North America,-0.143275195,Household Savings
+GDP.per.capita.l120,Middle income,0.018870889,GDP
+Health.Expenditure.l120,Middle income,-4.599627541,GDP
+Inflation.l120,Middle income,-0.430580847,GDP
+Unemployment.Rate.l120,Middle income,9.45243842,GDP
+Household.Savings.l120,Middle income,0.614941435,GDP
+const20,Middle income,-0.416822401,GDP
+GDP.per.capita.l1111,Middle income,-0.030559409,Health Expenditure
+Health.Expenditure.l1111,Middle income,0.396850673,Health Expenditure
+Inflation.l1111,Middle income,0.018444013,Health Expenditure
+Unemployment.Rate.l1111,Middle income,-0.24120596,Health Expenditure
+Household.Savings.l1111,Middle income,0.003772673,Health Expenditure
+const111,Middle income,0.043236172,Health Expenditure
+GDP.per.capita.l129,Middle income,0.242424943,Inflation
+Health.Expenditure.l129,Middle income,-12.13754879,Inflation
+Inflation.l129,Middle income,-0.37315506,Inflation
+Unemployment.Rate.l129,Middle income,-0.324312077,Inflation
+Household.Savings.l129,Middle income,-0.077823517,Inflation
+const29,Middle income,0.711802534,Inflation
+GDP.per.capita.l139,Middle income,-0.000203652,Unemployment Rate
+Health.Expenditure.l139,Middle income,0.45515264,Unemployment Rate
+Inflation.l139,Middle income,0.045011395,Unemployment Rate
+Unemployment.Rate.l139,Middle income,0.210351095,Unemployment Rate
+Household.Savings.l139,Middle income,-0.062778715,Unemployment Rate
+const39,Middle income,0.038290092,Unemployment Rate
+GDP.per.capita.l149,Middle income,-0.031572543,Household Savings
+Health.Expenditure.l149,Middle income,-1.663938802,Household Savings
+Inflation.l149,Middle income,-0.182177122,Household Savings
+Unemployment.Rate.l149,Middle income,3.911857131,Household Savings
+Household.Savings.l149,Middle income,1.081743843,Household Savings
+const49,Middle income,-0.143408021,Household Savings
+GDP.per.capita.l119,Middle East & North Africa,0.314622857,GDP
+Health.Expenditure.l119,Middle East & North Africa,-1.845722682,GDP
+Inflation.l119,Middle East & North Africa,-0.563857085,GDP
+Unemployment.Rate.l119,Middle East & North Africa,-0.367863494,GDP
+Household.Savings.l119,Middle East & North Africa,-0.156623657,GDP
+const19,Middle East & North Africa,0.216084755,GDP
+GDP.per.capita.l1110,Middle East & North Africa,-0.006659822,Health Expenditure
+Health.Expenditure.l1110,Middle East & North Africa,1.507345194,Health Expenditure
+Inflation.l1110,Middle East & North Africa,0.132022082,Health Expenditure
+Unemployment.Rate.l1110,Middle East & North Africa,0.050073121,Health Expenditure
+Household.Savings.l1110,Middle East & North Africa,0.024954222,Health Expenditure
+const110,Middle East & North Africa,-0.041729254,Health Expenditure
+GDP.per.capita.l128,Middle East & North Africa,-0.078201429,Inflation
+Health.Expenditure.l128,Middle East & North Africa,-5.372832806,Inflation
+Inflation.l128,Middle East & North Africa,-0.588911451,Inflation
+Unemployment.Rate.l128,Middle East & North Africa,-1.836639448,Inflation
+Household.Savings.l128,Middle East & North Africa,-0.188796936,Inflation
+const28,Middle East & North Africa,0.565514046,Inflation
+GDP.per.capita.l138,Middle East & North Africa,-0.005801345,Unemployment Rate
+Health.Expenditure.l138,Middle East & North Africa,0.461389521,Unemployment Rate
+Inflation.l138,Middle East & North Africa,0.059636874,Unemployment Rate
+Unemployment.Rate.l138,Middle East & North Africa,0.781968894,Unemployment Rate
+Household.Savings.l138,Middle East & North Africa,-0.014270076,Unemployment Rate
+const38,Middle East & North Africa,0.003793122,Unemployment Rate
+GDP.per.capita.l148,Middle East & North Africa,0.179511833,Household Savings
+Health.Expenditure.l148,Middle East & North Africa,-6.667085691,Household Savings
+Inflation.l148,Middle East & North Africa,-1.281538502,Household Savings
+Unemployment.Rate.l148,Middle East & North Africa,-1.740728224,Household Savings
+Household.Savings.l148,Middle East & North Africa,0.422937072,Household Savings
+const48,Middle East & North Africa,0.74554254,Household Savings
+GDP.per.capita.l117,Lower middle income,0.043828791,GDP
+Health.Expenditure.l117,Lower middle income,5.852840702,GDP
+Inflation.l117,Lower middle income,-0.079785788,GDP
+Unemployment.Rate.l117,Lower middle income,2.668495958,GDP
+Household.Savings.l117,Lower middle income,0.136678408,GDP
+const17,Lower middle income,-0.37217366,GDP
+GDP.per.capita.l118,Lower middle income,0.00054913,Health Expenditure
+Health.Expenditure.l118,Lower middle income,-0.022171589,Health Expenditure
+Inflation.l118,Lower middle income,-0.000370185,Health Expenditure
+Unemployment.Rate.l118,Lower middle income,-0.32790629,Health Expenditure
+Household.Savings.l118,Lower middle income,-0.016644761,Health Expenditure
+const18,Lower middle income,0.063047894,Health Expenditure
+GDP.per.capita.l127,Lower middle income,0.748755168,Inflation
+Health.Expenditure.l127,Lower middle income,-7.842870861,Inflation
+Inflation.l127,Lower middle income,0.071866312,Inflation
+Unemployment.Rate.l127,Lower middle income,-0.254676076,Inflation
+Household.Savings.l127,Lower middle income,0.224078968,Inflation
+const27,Lower middle income,0.288255521,Inflation
+GDP.per.capita.l137,Lower middle income,-0.002806503,Unemployment Rate
+Health.Expenditure.l137,Lower middle income,-0.292325286,Unemployment Rate
+Inflation.l137,Lower middle income,0.001842599,Unemployment Rate
+Unemployment.Rate.l137,Lower middle income,0.68040722,Unemployment Rate
+Household.Savings.l137,Lower middle income,-0.031457343,Unemployment Rate
+const37,Lower middle income,0.037139161,Unemployment Rate
+GDP.per.capita.l147,Lower middle income,0.19141196,Household Savings
+Health.Expenditure.l147,Lower middle income,4.241130712,Household Savings
+Inflation.l147,Lower middle income,-0.039716551,Household Savings
+Unemployment.Rate.l147,Lower middle income,4.333863305,Household Savings
+Household.Savings.l147,Lower middle income,0.966067739,Household Savings
+const47,Lower middle income,-0.394620066,Household Savings
+GDP.per.capita.l110,Low income,-0.184225751,GDP
+Health.Expenditure.l110,Low income,2.687412717,GDP
+Inflation.l110,Low income,-0.264072376,GDP
+Unemployment.Rate.l110,Low income,-5.95367041,GDP
+Household.Savings.l110,Low income,-1.010483125,GDP
+const10,Low income,0.298467336,GDP
+GDP.per.capita.l116,Low income,-0.015200159,Health Expenditure
+Health.Expenditure.l116,Low income,0.400546309,Health Expenditure
+Inflation.l116,Low income,0.001303712,Health Expenditure
+Unemployment.Rate.l116,Low income,0.371602758,Health Expenditure
+Household.Savings.l116,Low income,0.059373448,Health Expenditure
+const16,Low income,0.005404269,Health Expenditure
+GDP.per.capita.l126,Low income,0.101885477,Inflation
+Health.Expenditure.l126,Low income,-2.281575311,Inflation
+Inflation.l126,Low income,0.100991796,Inflation
+Unemployment.Rate.l126,Low income,-9.512918874,Inflation
+Household.Savings.l126,Low income,0.153935469,Inflation
+const26,Low income,0.616587732,Inflation
+GDP.per.capita.l136,Low income,0.002774159,Unemployment Rate
+Health.Expenditure.l136,Low income,-0.092298072,Unemployment Rate
+Inflation.l136,Low income,-0.009290149,Unemployment Rate
+Unemployment.Rate.l136,Low income,0.28042901,Unemployment Rate
+Household.Savings.l136,Low income,0.009476129,Unemployment Rate
+const36,Low income,0.03921641,Unemployment Rate
+GDP.per.capita.l146,Low income,0.064198594,Household Savings
+Health.Expenditure.l146,Low income,1.889731714,Household Savings
+Inflation.l146,Low income,-0.433885769,Household Savings
+Unemployment.Rate.l146,Low income,-4.777512064,Household Savings
+Household.Savings.l146,Low income,0.586147856,Household Savings
+const46,Low income,0.216596143,Household Savings
+GDP.per.capita.l19,Low & middle income,0.188985363,GDP
+Health.Expenditure.l19,Low & middle income,-1.11598538,GDP
+Inflation.l19,Low & middle income,-0.250976975,GDP
+Unemployment.Rate.l19,Low & middle income,10.1099298,GDP
+Household.Savings.l19,Low & middle income,0.603139602,GDP
+const9,Low & middle income,-0.637339693,GDP
+GDP.per.capita.l115,Low & middle income,-0.033893732,Health Expenditure
+Health.Expenditure.l115,Low & middle income,0.332304026,Health Expenditure
+Inflation.l115,Low & middle income,0.012584125,Health Expenditure
+Unemployment.Rate.l115,Low & middle income,-0.266800983,Health Expenditure
+Household.Savings.l115,Low & middle income,0.003723178,Health Expenditure
+const15,Low & middle income,0.04815614,Health Expenditure
+GDP.per.capita.l125,Low & middle income,0.336429254,Inflation
+Health.Expenditure.l125,Low & middle income,-12.00552489,Inflation
+Inflation.l125,Low & middle income,-0.431383244,Inflation
+Unemployment.Rate.l125,Low & middle income,0.729869021,Inflation
+Household.Savings.l125,Low & middle income,0.061733662,Inflation
+const25,Low & middle income,0.604841426,Inflation
+GDP.per.capita.l135,Low & middle income,-0.018052964,Unemployment Rate
+Health.Expenditure.l135,Low & middle income,0.049807255,Unemployment Rate
+Inflation.l135,Low & middle income,0.021257738,Unemployment Rate
+Unemployment.Rate.l135,Low & middle income,0.210390867,Unemployment Rate
+Household.Savings.l135,Low & middle income,-0.056876048,Unemployment Rate
+const35,Low & middle income,0.058345553,Unemployment Rate
+GDP.per.capita.l145,Low & middle income,0.053966208,Household Savings
+Health.Expenditure.l145,Low & middle income,0.066811159,Household Savings
+Inflation.l145,Low & middle income,-0.109990463,Household Savings
+Unemployment.Rate.l145,Low & middle income,4.082480067,Household Savings
+Household.Savings.l145,Low & middle income,1.071818337,Household Savings
+const45,Low & middle income,-0.242463146,Household Savings
+GDP.per.capita.l18,Latin America & Caribbean,-0.270289467,GDP
+Health.Expenditure.l18,Latin America & Caribbean,-0.027335663,GDP
+Inflation.l18,Latin America & Caribbean,-1.538678321,GDP
+Unemployment.Rate.l18,Latin America & Caribbean,0.941963998,GDP
+Household.Savings.l18,Latin America & Caribbean,1.691263676,GDP
+const8,Latin America & Caribbean,-0.34057135,GDP
+GDP.per.capita.l114,Latin America & Caribbean,0.010870136,Health Expenditure
+Health.Expenditure.l114,Latin America & Caribbean,0.518478179,Health Expenditure
+Inflation.l114,Latin America & Caribbean,0.085254455,Health Expenditure
+Unemployment.Rate.l114,Latin America & Caribbean,-0.219061877,Health Expenditure
+Household.Savings.l114,Latin America & Caribbean,-0.099524042,Health Expenditure
+const14,Latin America & Caribbean,0.06812853,Health Expenditure
+GDP.per.capita.l124,Latin America & Caribbean,0.130905309,Inflation
+Health.Expenditure.l124,Latin America & Caribbean,-0.481448518,Inflation
+Inflation.l124,Latin America & Caribbean,-0.419881736,Inflation
+Unemployment.Rate.l124,Latin America & Caribbean,0.426084966,Inflation
+Household.Savings.l124,Latin America & Caribbean,0.678398201,Inflation
+const24,Latin America & Caribbean,-0.086424219,Inflation
+GDP.per.capita.l134,Latin America & Caribbean,0.081599354,Unemployment Rate
+Health.Expenditure.l134,Latin America & Caribbean,0.919423513,Unemployment Rate
+Inflation.l134,Latin America & Caribbean,0.396632768,Unemployment Rate
+Unemployment.Rate.l134,Latin America & Caribbean,1.02283195,Unemployment Rate
+Household.Savings.l134,Latin America & Caribbean,-0.36909264,Unemployment Rate
+const34,Latin America & Caribbean,-0.006696562,Unemployment Rate
+GDP.per.capita.l144,Latin America & Caribbean,-0.00156591,Household Savings
+Health.Expenditure.l144,Latin America & Caribbean,1.736099992,Household Savings
+Inflation.l144,Latin America & Caribbean,-0.242319604,Household Savings
+Unemployment.Rate.l144,Latin America & Caribbean,1.302927305,Household Savings
+Household.Savings.l144,Latin America & Caribbean,1.143037296,Household Savings
+const44,Latin America & Caribbean,-0.238379312,Household Savings
+GDP.per.capita.l17,High income,0.158774056,GDP
+Health.Expenditure.l17,High income,-1.423919714,GDP
+Inflation.l17,High income,-1.31360652,GDP
+Unemployment.Rate.l17,High income,1.24590758,GDP
+Household.Savings.l17,High income,0.109805076,GDP
+const7,High income,0.083649812,GDP
+GDP.per.capita.l113,High income,-0.059301421,Health Expenditure
+Health.Expenditure.l113,High income,1.095076402,Health Expenditure
+Inflation.l113,High income,0.123842894,Health Expenditure
+Unemployment.Rate.l113,High income,-0.078547504,Health Expenditure
+Household.Savings.l113,High income,0.141043139,Health Expenditure
+const13,High income,-0.03723975,Health Expenditure
+GDP.per.capita.l123,High income,0.42843585,Inflation
+Health.Expenditure.l123,High income,-0.242390282,Inflation
+Inflation.l123,High income,0.305446364,Inflation
+Unemployment.Rate.l123,High income,-0.673620128,Inflation
+Household.Savings.l123,High income,-1.222495907,Inflation
+const23,High income,0.359664845,Inflation
+GDP.per.capita.l133,High income,-0.144880635,Unemployment Rate
+Health.Expenditure.l133,High income,0.226828522,Unemployment Rate
+Inflation.l133,High income,0.47405826,Unemployment Rate
+Unemployment.Rate.l133,High income,0.456809597,Unemployment Rate
+Household.Savings.l133,High income,-0.329630877,Unemployment Rate
+const33,High income,0.078792925,Unemployment Rate
+GDP.per.capita.l143,High income,0.1333723,Household Savings
+Health.Expenditure.l143,High income,-0.292233907,Household Savings
+Inflation.l143,High income,-0.406607577,Household Savings
+Unemployment.Rate.l143,High income,0.526681096,Household Savings
+Household.Savings.l143,High income,0.770961417,Household Savings
+const43,High income,0.05458003,Household Savings
+GDP.per.capita.l16,European Union,0.464422766,GDP
+Health.Expenditure.l16,European Union,-3.043235935,GDP
+Inflation.l16,European Union,-1.704843593,GDP
+Unemployment.Rate.l16,European Union,0.02179244,GDP
+Household.Savings.l16,European Union,-1.550062822,GDP
+const6,European Union,0.698364033,GDP
+GDP.per.capita.l112,European Union,-0.05653917,Health Expenditure
+Health.Expenditure.l112,European Union,1.160951667,Health Expenditure
+Inflation.l112,European Union,0.141649616,Health Expenditure
+Unemployment.Rate.l112,European Union,-0.020336683,Health Expenditure
+Household.Savings.l112,European Union,0.182755211,Health Expenditure
+const12,European Union,-0.058651123,Health Expenditure
+GDP.per.capita.l122,European Union,0.499971529,Inflation
+Health.Expenditure.l122,European Union,-1.298841462,Inflation
+Inflation.l122,European Union,-0.209036097,Inflation
+Unemployment.Rate.l122,European Union,-0.741471757,Inflation
+Household.Savings.l122,European Union,-1.365743733,Inflation
+const22,European Union,0.53958953,Inflation
+GDP.per.capita.l132,European Union,-0.196582178,Unemployment Rate
+Health.Expenditure.l132,European Union,0.651199241,Unemployment Rate
+Inflation.l132,European Union,0.559007596,Unemployment Rate
+Unemployment.Rate.l132,European Union,0.821924462,Unemployment Rate
+Household.Savings.l132,European Union,-0.013451266,Unemployment Rate
+const32,European Union,-0.050898575,Unemployment Rate
+GDP.per.capita.l142,European Union,0.198574988,Household Savings
+Health.Expenditure.l142,European Union,-0.747962299,Household Savings
+Inflation.l142,European Union,-0.535717622,Household Savings
+Unemployment.Rate.l142,European Union,0.209136237,Household Savings
+Household.Savings.l142,European Union,0.334883118,Household Savings
+const42,European Union,0.220288549,Household Savings
+GDP.per.capita.l15,East Asia & Pacific,0.123326129,GDP
+Health.Expenditure.l15,East Asia & Pacific,1.453581981,GDP
+Inflation.l15,East Asia & Pacific,-0.338349617,GDP
+Unemployment.Rate.l15,East Asia & Pacific,4.484445656,GDP
+Household.Savings.l15,East Asia & Pacific,-0.04340748,GDP
+const5,East Asia & Pacific,-0.214899242,GDP
+GDP.per.capita.l111,East Asia & Pacific,8.80938E-06,Health Expenditure
+Health.Expenditure.l111,East Asia & Pacific,0.699432574,Health Expenditure
+Inflation.l111,East Asia & Pacific,0.041033518,Health Expenditure
+Unemployment.Rate.l111,East Asia & Pacific,-0.116826801,Health Expenditure
+Household.Savings.l111,East Asia & Pacific,0.027110453,Health Expenditure
+const11,East Asia & Pacific,0.013428312,Health Expenditure
+GDP.per.capita.l121,East Asia & Pacific,0.81437224,Inflation
+Health.Expenditure.l121,East Asia & Pacific,-1.867290906,Inflation
+Inflation.l121,East Asia & Pacific,-0.166227003,Inflation
+Unemployment.Rate.l121,East Asia & Pacific,1.558593571,Inflation
+Household.Savings.l121,East Asia & Pacific,0.012663507,Inflation
+const21,East Asia & Pacific,0.047020624,Inflation
+GDP.per.capita.l131,East Asia & Pacific,-0.004996114,Unemployment Rate
+Health.Expenditure.l131,East Asia & Pacific,-0.21998781,Unemployment Rate
+Inflation.l131,East Asia & Pacific,0.018237008,Unemployment Rate
+Unemployment.Rate.l131,East Asia & Pacific,0.32628844,Unemployment Rate
+Household.Savings.l131,East Asia & Pacific,-0.031288574,Unemployment Rate
+const31,East Asia & Pacific,0.052605191,Unemployment Rate
+GDP.per.capita.l141,East Asia & Pacific,0.048658552,Household Savings
+Health.Expenditure.l141,East Asia & Pacific,0.644672718,Household Savings
+Inflation.l141,East Asia & Pacific,-0.158754475,Household Savings
+Unemployment.Rate.l141,East Asia & Pacific,2.419466997,Household Savings
+Household.Savings.l141,East Asia & Pacific,0.930793981,Household Savings
+const41,East Asia & Pacific,-0.111536794,Household Savings

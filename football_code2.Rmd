@@ -1,0 +1,458 @@
+---
+output:
+  word_document: default
+  html_document: default
+---
+```{r Libraries}
+library(plyr)
+library(dplyr)
+library(readr)
+library(openxlsx)
+library(plotly)
+library(data.table)
+library(vars)
+library(tsDyn)
+library(factoextra)
+library(caret)
+```
+
+```{r Directories}
+player_dir <- "C:/Users/raval/Desktop/NOW/4001/2022-student-research-case-study-player-data.xlsx"
+econ_dir <- "C:/Users/raval/Desktop/NOW/4001/2022-student-research-case-study-economic-data.xlsx"
+worldbank_dir <- "C:/Users/raval/Desktop/NOW/4001/External Analysis.xlsx"
+oecd_dir <- "C:/Users/raval/Desktop/NOW/4001/External Analysis.xlsx"
+```
+
+```{r Function: Growth Rates}
+#Function: Growth Rates
+
+growth_fun <- function(x){
+  return(c(0, exp(diff(log(x)))-1))
+}
+```
+
+```{r Function: Line Graph}
+#Function: Line Graph
+
+graph_line <- function(data_name, title_name, tick_form = "") {
+  
+  num_series <- length(colnames(data_name))
+  
+  fig <- plot_ly(data_name, x = ~data_name[,1], y = data_name[,2], name = colnames(data_name)[2], type = 'scatter', mode='lines')
+  
+  if (num_series >=3){
+    for (i in (3:num_series)){
+      if (colnames(data_name)[i] == "Rarita"){
+        fig <- fig %>% add_trace(y = data_name[,i], name = colnames(data_name)[i], mode='lines', line=list(dash = 'dash'))
+      } else{
+        fig <- fig %>% add_trace(y = data_name[,i], name = colnames(data_name)[i], mode='lines')
+      }
+    }
+  }
+  
+  fig <- fig %>% layout(title = title_name, 
+                        xaxis = list(title = colnames(data_name)[1]), 
+                        yaxis = list(title = "", tickformat = tick_form))
+  
+  fig
+}
+```
+
+```{r Data: Players}
+#Data: Players
+player_league_shot <- read.xlsx(player_dir,
+                         sheet = 2,
+                         startRow = 12)
+
+player_league_pass <- read.xlsx(player_dir,
+                         sheet = 3,
+                         startRow = 12)
+
+player_league_def <- read.xlsx(player_dir,
+                         sheet = 4,
+                         startRow = 12)
+
+player_league_gk <- read.xlsx(player_dir,
+                         sheet = 5,
+                         startRow = 12)
+
+player_league_nongk <- join_all(list(player_league_shot, player_league_pass, player_league_def), c("Player", "Nation", "Squad", "Pos", "Age", "Born", "League", "Year"))
+
+player_league_nongk
+```
+
+```{r Data: Rarita Economics}
+#Data: Rarita Economics
+econ_all <- read.xlsx(econ_dir,
+                         sheet = 2,
+                         startRow = 12)
+
+econ_gdp <- data.frame(sapply(econ_all[1:10, 1:5], as.numeric))
+
+econ_gni <- data.frame(sapply(econ_all[1:10, 6:10], as.numeric))
+
+econ_pop <- data.frame(sapply(econ_all[13:22, 1:5], as.numeric))
+econ_pop_den <- data.frame(sapply(econ_all[13:22, 6:10], as.numeric))
+econ_health <- data.frame(sapply(econ_all[25:34, 1:5], as.numeric))
+econ_hsaving <- data.frame(sapply(econ_all[25:34, 6:10], as.numeric))
+
+econ_fx <- read.xlsx(econ_dir,
+                         sheet = 2,
+                         startRow = 54)[1:5,]
+
+econ_gdp
+econ_gni
+econ_pop
+econ_pop_den
+econ_health
+econ_hsaving
+econ_fx
+```
+```{r Data: Rarita Spot Rates}
+#Data: Rarita Spot Rates
+
+econ_spot <- read.xlsx(econ_dir,
+                         sheet = 3,
+                         startRow = 12)[1:60,]
+
+econ_spot
+```
+
+```{r Data: Rarita Inflation Rates}
+#Data: Rarita Inflation Rates
+
+econ_infl <- read.xlsx(econ_dir,
+                         sheet = 4,
+                         startRow = 11)[1:30, 1:2]
+
+econ_infl
+```
+
+```{r Data: Rarita + Other Country GDP}
+#Data: Rarita + Other Country GDP
+
+econ_gdp_other <- read.xlsx(econ_dir,
+                         sheet = 5,
+                         startRow = 12)[1:20,] 
+
+extra_col_adj1 <- colnames(econ_gdp)[5]
+econ_rarita_gdp_t <- cbind(extra_col_adj1, data.frame(t(econ_gdp[6:10,5])))
+colnames(econ_rarita_gdp_t) <- c("Country", "2016", "2017", "2018", "2019", "2020")
+econ_gdp_other <- rbind(econ_gdp_other, econ_rarita_gdp_t)
+econ_gdp_other
+```
+
+```{r Analysis: GDP/GNI}
+#Analysis: GDP/GNI
+
+#GDP
+graph_line(econ_gdp, "GDP per Capita in Rarita")
+
+econ_gdp_growth <- data.frame(cbind("Year" = econ_gdp$Year, sapply(econ_gdp[,2:5], FUN = growth_fun)))
+
+graph_line(econ_gdp_growth[-1,], "GDP per Capita Growth in Rarita", "%")
+
+#GNI
+graph_line(econ_gni, "GNI per Capita in Rarita")
+econ_gni_growth <- data.frame(cbind("Year" = econ_gni$Year, sapply(econ_gni[,2:5], FUN = growth_fun)))
+
+graph_line(econ_gni_growth[-1,], "GNI per Capita Growth in Rarita", "%")
+```
+
+```{r Analysis Population/Population Density}
+#Analysis Population/Population Density
+
+#Population
+graph_line(econ_pop, "Population of Rarita")
+
+econ_pop_growth <- data.frame(cbind("Year" = econ_pop$Year, sapply(econ_pop[,2:5], FUN = growth_fun)))
+
+graph_line(econ_pop_growth[-1,], "Population Growth in Rarita", ".2%")
+
+#Population Density
+graph_line(econ_pop_den, "Population Density of Rarita")
+```
+
+```{r Analysis Healthcare Spending/Household Saving}
+#Analysis Healthcare Spending/Household Saving
+
+#Healthcare Spending
+graph_line(econ_health, "Healthcare Spending in Rarita", ",K")
+
+econ_health_growth <- data.frame(cbind("Year" = econ_health$Year, sapply(econ_health[,2:5], FUN = growth_fun)))
+
+graph_line(econ_health_growth[-1,], "Healthcare Spending in Rarita", "%")
+
+#Household Saving
+graph_line(econ_hsaving, "Household Savings in Rarita", "%")
+
+econ_hsaving_growth <- data.frame(cbind("Year" = econ_hsaving$Year, sapply(econ_hsaving[,2:5], FUN = growth_fun)))
+
+graph_line(econ_hsaving_growth[-1,], "Household Savings Growth in Rarita", "%")
+```
+
+```{r Analysis: Exchange Rates}
+#Analysis: Exchange Rates
+
+graph_line(econ_fx[,1:2], "EURO to Doubloon Conversion Rates", ".3")
+```
+
+
+```{r Modelling: Population}
+econ_pop_ts <- econ_pop$Rarita
+econ_pop_ts
+
+pop_graph <- c(econ_pop_ts, rep(NA, 10))
+popaic_vals <- data.frame(matrix(ncol=4,nrow=0, dimnames=list(NULL, c("p", "q", "r", "aic"))))
+
+#Test for purpose of minimising AIC (Brockwell & Davis recommend using Akaike information criterion (AIC) for finding p and q). Could use log-likelihood or BIC as well?
+#Consider using forecast package auto.arima -> what p/q values does it select?
+#for (i in 0:2){
+#  for (j in 1:3){
+#      for (k in 1:3){
+#        pop_arma <- arima(econ_pop_ts, order = c(i, j, k))
+#        popaic_vals <- rbind(popaic_vals, c(i, j, k, pop_arma$aic))
+#      }
+#    }
+#  }
+
+#colnames(popaic_vals) <- c("p", "q", "r", "aic")
+#popaic_vals
+#plot_ly(x=popaic_vals$p, y=popaic_vals$q, z=popaic_vals$aic, type='contour')
+
+#Selections based on lowest AIC + most sensible projection
+
+pop_arma <- arima(econ_pop_ts, order = c(1, 2, 2))
+pop_arma
+
+popresiduals_arma <- residuals(pop_arma)
+
+pop_fitted <- econ_pop_ts - popresiduals_arma
+pop_fitted_graph <- c(pop_fitted, rep(NA, 10))
+
+pop_prediction_fitted <- predict(pop_arma, n.ahead = 10, se.fit=FALSE)
+pop_prediction_fitted_df <- data.frame('Year' = c(2021:2030), 'Rarita' = pop_prediction_fitted)
+colnames(pop_prediction_fitted_df) <- c('Year', 'Rarita') 
+pop_prediction_fitted_graph <- c(rep(NA, 10), pop_prediction_fitted)
+ 
+pop_info <- data.frame("Year" = c(2011:2030), "Historical.Population" = pop_graph, 
+                        "Fitted.ARIMA" = pop_fitted_graph, "Predicted.Future.Population" = pop_prediction_fitted_graph)
+
+full_pop_table <- rbind(econ_pop[,c(1,5)], pop_prediction_fitted_df)
+write.xlsx(full_pop_table, "C:/Users/raval/Desktop/NOW/4001/ROut_Pop.xlsx", sheetName="ROut_Population")
+
+pop_fig <- plot_ly(pop_info, x = ~pop_info[,1], y = pop_info[,2], name = colnames(pop_info)[2], type = 'scatter', mode='lines')
+pop_fig <- pop_fig %>% 
+              add_trace(y = pop_info[,3], name = colnames(pop_info)[3], mode='lines', line=list(dash = 'dash')) %>%
+              add_trace(y = pop_info[,4], name = colnames(pop_info)[4], mode='lines', line=list(dash = 'dot')) %>%
+              layout(title = "Historical and Projected Population", 
+                    xaxis = list(title = colnames(pop_info)[1]), 
+                    yaxis = list(title = "", tickformat = ''))
+  
+pop_fig
+
+```
+
+```{r Modelling: Inflation Rates}
+#Modelling: Inflation Rates
+
+#Time series: ARMA Model
+
+#Note: Early yearly of high inflation are excluded for better fit
+#Question: Remove 2009 negative inflation? Or does it provide important information on likelihood of recessions/negative inflation?
+
+econ_infl_ts <- econ_infl$Annual.Inflation.Rate[c(4:30)]
+
+infl_graph <- c(econ_infl_ts, rep(NA, 10))
+aic_vals <- data.frame(matrix(ncol=3,nrow=0, dimnames=list(NULL, c("p", "q", "aic"))))
+
+#Test for purpose of minimising AIC (Brockwell & Davis recommend using Akaike information criterion (AIC) for finding p and q). Could use log-likelihood or BIC as well?
+#Consider using forecast package auto.arima -> what p/q values does it select?
+for (i in 0:5){
+  for (j in 0:5){
+    infl_arma <- arima(econ_infl_ts, order = c(i, 0, j))
+    aic_vals <- rbind(aic_vals, c(i, j, infl_arma$aic))
+    }
+  }
+
+colnames(aic_vals) <- c("p", "q", "aic")
+aic_vals
+plot_ly(x=aic_vals$p, y=aic_vals$q, z=aic_vals$aic, type='contour')
+
+#Choosing optimal prediction/quicker convergence vs intuitive/smoother prediction? E.g. MA(0,2) vs ARMA(1,1) (AIC doesn't differ much, ARMA is less volatile, smoother)
+infl_arma <- arima(econ_infl_ts, order = c(1, 0, 1))
+infl_arma
+
+residuals_arma <- residuals(infl_arma)
+
+infl_fitted <- econ_infl_ts - residuals_arma
+infl_fitted_graph <- c(infl_fitted, rep(NA, 10))
+
+prediction_fitted <- predict(infl_arma, n.ahead = 10, se.fit=FALSE)
+prediction_fitted_df <- data.frame('Year' = c(2021:2030), 'Annual.Inflation.Rate' = prediction_fitted)
+colnames(prediction_fitted_df) <- c('Year', 'Annual.Inflation.Rate') 
+prediction_fitted_graph <- c(rep(NA, 27), prediction_fitted)
+
+infl_years <- c(1994:2030) 
+infl_info <- data.frame("Year" = infl_years, "Historical.Inflation" = infl_graph, 
+                        "Fitted.ARMA" = infl_fitted_graph, "Predicted.Future.Inflation" = prediction_fitted_graph)
+
+full_infl_table <- rbind(econ_infl, prediction_fitted_df)
+write.xlsx(full_infl_table, "C:/Users/raval/Desktop/NOW/4001/ROut_Infl.xlsx", sheetName="ROut_Infl")
+
+infl_fig <- plot_ly(infl_info, x = ~infl_info[,1], y = infl_info[,2], name = colnames(infl_info)[2], type = 'scatter', mode='lines')
+infl_fig <- infl_fig %>% 
+              add_trace(y = infl_info[,3], name = colnames(infl_info)[3], mode='lines', line=list(dash = 'dash')) %>%
+              add_trace(y = infl_info[,4], name = colnames(infl_info)[4], mode='lines', line=list(dash = 'dot')) %>%
+              layout(title = "Historical and Future Inflation", 
+                    xaxis = list(title = colnames(infl_info)[1]), 
+                    yaxis = list(title = "", tickformat = '%'))
+  
+infl_fig
+```
+
+```{r Modelling: Unemployment Rate (External Model Fitting)}
+
+#External Data from World Bank
+
+#Use real world data of world's developed/large economies to fit a model explaining unemployment through GDP/capita growth, GNI/capita growth, inflation, healthcare spending(%GDP) and Gross Domestic Saving (%GDP) ((GDP-total consumption)/GDP -> proxy for household savings)
+
+#Data Import - Unemployment (IOL estimate)
+ext_worldbank <- read.xlsx(worldbank_dir, sheet = 2)[,-8]
+ext_oecd <- read.xlsx(oecd_dir, sheet=3)
+
+#Manipulate World Bank Data + Split into non-Rarita and Rarita countries
+ext_worldbank_oth <- ext_worldbank[ext_worldbank$Country.Name != 'Rarita',]
+ext_worldbank_rar <- ext_worldbank[ext_worldbank$Country.Name == 'Rarita', -7]
+
+#Manipulate OECD Data + Split into non-Rarita and Rarita countries
+ext_oecd_oth <- ext_oecd[ext_oecd$Country.Name != 'Rarita',]
+ext_oecd_rar <- ext_oecd[ext_oecd$Country.Name == 'Rarita',]
+ext_worldbank
+
+#World Bank Training, Testing Split
+ext_worldbank_oth_train <- ext_worldbank_oth[ext_worldbank_oth$Year<=2016,]
+ext_worldbank_oth_test <- ext_worldbank_oth[ext_worldbank_oth$Year>2016,]
+
+worldbank_list <- unique(ext_worldbank_oth_train$Country.Name) 
+oecd_list <- unique(ext_oecd_oth$Country.Name)
+
+lm_output_df <- data.frame('Country' = character(),
+                           'Variable' = character(),
+                           'Coeffient' = numeric())
+
+#Linear Model
+for (i in 1:length(worldbank_list)){
+
+  country_selection <- worldbank_list[i]
+  ext_worldbank_country <- ext_worldbank_oth_train[ext_worldbank_oth_train$Country.Name==country_selection,]
+
+  #Linear Model Fit
+  worldbanklm <- train(Unemployment.Rate~GDP.per.capita
+                                    +Inflation
+                                    + Health.Expenditure
+                                    + Household.Savings,
+                       data=ext_worldbank_country, method='lm')
+  
+  temp_df <- mutate(data.frame(worldbanklm$finalModel$coefficients), country_selection)
+  lm_output_df <- rbind(temp_df, lm_output_df)
+}
+
+#write.xlsx(lm_output_df, "C:/Users/raval/Desktop/NOW/4001/ROut_LMCoeffs.xlsx", sheetName="LMCoeffs")
+
+#VAR
+
+var_output_df <- data.frame('Country' = character(),
+                           'Coefficient' = numeric(),
+                           'Model' = character())
+
+for (i in 1:length(worldbank_list)){
+  
+  country_selection <- worldbank_list[i]
+  ext_worldbank_country <- ext_worldbank_oth_train[ext_worldbank_oth_train$Country.Name==country_selection,]
+  
+  lag_p <- VARselect(ext_worldbank_country[,c(3,5,6,7,8)])$selection[[1]]
+  
+  worldbankvar <- VAR(ext_worldbank_country[,c(3,5,6,7,8)], p=lag_p)
+  
+  coeff1 <- data.frame("Country"=country_selection, "Coeff" = worldbankvar$varresult$GDP.per.capita$coefficients, 'Model' = 'GDP')
+  coeff2<- data.frame("Country"=country_selection, "Coeff" = worldbankvar$varresult$Health.Expenditure$coefficients, 'Model' = 'Health Expenditure')
+  coeff3 <- data.frame("Country"=country_selection, "Coeff" = worldbankvar$varresult$Inflation$coefficients, 'Model' = 'Inflation')
+  coeff4 <- data.frame("Country"=country_selection, "Coeff" = worldbankvar$varresult$Unemployment.Rate$coefficients, 'Model' = 'Unemployment Rate')
+  coeff5 <- data.frame("Country"=country_selection, "Coeff" = worldbankvar$varresult$Household.Savings$coefficients, 'Model' = 'Household Savings')
+  
+  temp_df <- rbind(coeff1, coeff2, coeff3, coeff4, coeff5)
+  var_output_df <- rbind(temp_df, var_output_df)
+}
+
+write.xlsx(var_output_df, "C:/Users/raval/Desktop/NOW/4001/ROut_VARCoeffs.xlsx", sheetName="VARCoeffs", rowNames=TRUE)
+```
+
+```{r Modelling: GDP per Capita}
+
+#Use Monte Carlo Simulation Method (We have used the Simple National Model (Australia))
+
+econ_gdp_ts <- econ_gdp_growth[,c(1,5)]
+econ_gdp_ts
+
+param_mu <- mean(econ_gdp_ts$Rarita)
+param_sigmasq <- var(econ_gdp_ts$Rarita)
+
+gdp_cap_2020 <- econ_gdp[10,5]
+
+years <- data.frame('Year'=c(2020:2030))
+
+for (i in 1:10000){
+  d_k <- rnorm(10, mean = param_mu, sd = sqrt(param_sigmasq))
+  accumulator <- cumprod(1+d_k)
+  path <- c(gdp_cap_2020, gdp_cap_2020*accumulator)
+  years <- cbind(years, path)
+  if(i==1){
+    plot(c(2020:2030), path, type = 'l')
+  } else{
+    points(c(2020:2030), path, type = 'l', col=i)
+  }
+}
+
+monte_out <- data.frame(t(years))
+monte_out
+
+write.xlsx(monte_out, "C:/Users/raval/Desktop/NOW/4001/ROut_MonteCarlo.xlsx", sheetName="MonteCarlo", rowNames=TRUE)
+
+```
+
+```{r Modelling: GNI per Capita}
+
+#Use Monte Carlo Simulation Method (We have used the Simple National Model (Australia))
+
+econ_gni_ts <- econ_gni_growth[,c(1,5)]
+econ_gni_ts
+
+param_mu <- mean(econ_gni_ts$Rarita)
+param_sigmasq <- var(econ_gni_ts$Rarita)
+
+gni_cap_2020 <- econ_gni[10,5]
+
+years <- data.frame('Year'=c(2020:2030))
+
+for (i in 1:10000){
+  d_k <- rnorm(10, mean = param_mu, sd = sqrt(param_sigmasq))
+  accumulator <- cumprod(1+d_k)
+  path <- c(gni_cap_2020, gni_cap_2020*accumulator)
+  years <- cbind(years, path)
+  if(i==1){
+    plot(c(2020:2030), path, type = 'l')
+  } else{
+    points(c(2020:2030), path, type = 'l', col=i)
+  }
+}
+
+monte_gni_out <- data.frame(t(years))
+monte_gni_out
+
+write.xlsx(monte_gni_out, "C:/Users/raval/Desktop/NOW/4001/ROut_MonteCarloGNI.xlsx", sheetName="MonteCarlo", rowNames=TRUE)
+
+```
+
+
+

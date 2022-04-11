@@ -1,0 +1,76 @@
+﻿worldbanklm.finalModel.coefficients,country_selection
+0.068018002,World
+0.018874007,World
+-0.020459904,World
+0.281416882,World
+-0.144102667,World
+-0.060875343,Upper middle income
+0.097560384,Upper middle income
+0.053239838,Upper middle income
+2.399581392,Upper middle income
+-0.058379703,Upper middle income
+0.050660395,Sub-Saharan Africa
+0.053302632,Sub-Saharan Africa
+-0.054852679,Sub-Saharan Africa
+0.306726623,Sub-Saharan Africa
+-0.018816942,Sub-Saharan Africa
+0.045867988,South Asia
+0.055716447,South Asia
+-0.000183207,South Asia
+0.191894779,South Asia
+-0.019277641,South Asia
+0.338188167,OECD members
+0.181205797,OECD members
+-0.138360363,OECD members
+-0.146327126,OECD members
+-1.146234115,OECD members
+0.343031489,North America
+0.290756449,North America
+-0.578012167,North America
+-0.188655713,North America
+-1.376318826,North America
+0.024165576,Middle income
+0.081371573,Middle income
+0.028069868,Middle income
+1.096204376,Middle income
+-0.092704687,Middle income
+0.225850374,Middle East & North Africa
+-0.040750513,Middle East & North Africa
+-0.179086056,Middle East & North Africa
+-1.296744051,Middle East & North Africa
+-0.146472586,Middle East & North Africa
+0.138544784,Lower middle income
+0.068549603,Lower middle income
+-0.018048689,Lower middle income
+-1.702963943,Lower middle income
+-0.068030816,Lower middle income
+0.056480785,Low income
+-0.01445907,Low income
+-0.004124118,Low income
+-0.160715279,Low income
+0.007442576,Low income
+0.03254976,Low & middle income
+0.068548327,Low & middle income
+0.025612381,Low & middle income
+0.91877772,Low & middle income
+-0.090390237,Low & middle income
+0.236800304,Latin America & Caribbean
+-0.163026077,Latin America & Caribbean
+-0.277285855,Latin America & Caribbean
+-2.183745211,Latin America & Caribbean
+0.023604422,Latin America & Caribbean
+0.264077033,High income
+0.22068055,High income
+0.110725176,High income
+0.401086706,High income
+-1.076103436,High income
+0.300698502,European Union
+0.240919853,European Union
+-0.414585602,European Union
+0.08174088,European Union
+-0.860852987,European Union
+0.062539868,East Asia & Pacific
+0.015363574,East Asia & Pacific
+0.006094491,East Asia & Pacific
+-0.225898569,East Asia & Pacific
+-0.020698627,East Asia & Pacific
