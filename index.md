@@ -17,15 +17,28 @@ The potential economic impacts of the team were also assessed, and given the unc
 ### Revenues & Expenses
 **Matchday**
 
-We hope to make revenue from selling memberships and season ticket passes to supporters. From the outset, the aim is to sell memberships cheaper to appeal to the masses (Central/West Rarita). As the team becomes more competitive and more popular, the memberships should increase and as such we can adequately monitor and optimise the price to maximise revenue using economic modelling. 
+We hope to make revenue from selling memberships and season ticket passes to supporters. From the outset, the aim is to sell memberships cheaper to appeal to the masses (Central/West Rarita). As the team becomes more competitive and more popular, the memberships should increase and as such we can adequately monitor and optimise the price to maximise revenue using economic modelling. The figures below were determined by assessing the average growth in match day revenue and correlating to positions finished in the respective national tournaments.
+ - Current revenue is 24.63 Doubloons per capita
+ - An expected increase of 4% per capita each year
+ - Upon the completion of stadium building, we expect a one-year abnormal increase in match-day sales
+
 
 **Sponsorships**
 
-Finding sponsorships allows private investment into the team and provides the team with capital to spend on improving resources. The aim is to make early investments into hiring a sponsorship committee who will be devoted to creating sponsorship packages and then researching potential sponsors to partner with. As the club becomes more competitive and popular, we expect the sponsorship deals to increase in size and provide more revenue, goods and services for the club.
+Finding sponsorships allows private investment into the team and provides the team with capital to spend on improving resources. The aim is to make early investments into hiring a sponsorship committee who will be devoted to creating sponsorship packages and then researching potential sponsors to partner with. As the club becomes more competitive and popular, we expect the sponsorship deals to increase in size and provide more revenue, goods and services for the club. The figures we have calculated reflect that sponsorship revenue was closely correlated to nations with high GDP.
+ - Current revenue is 75.06 Doubloons per capita
+ - We expect to receive close to 7% per capita increase in revenue each year
+ - By Year 10, we expect to receive 150 Doubloons per capita from sponsorships and advertising
+
 
 **Broadcasting**
 
-The aim is to sell rights of broadcasting Rarita games to television companies on small-term contracts. Then, as the popularity and competitive nature of the team increases, we expect to sign longer-term contracts for higher deals. This is the biggest revenue stream we expect. 
+The aim is to sell rights of broadcasting Rarita games to television companies on small-term contracts. Then, as the popularity and competitive nature of the team increases, we expect to sign longer-term contracts for higher deals. This is the biggest revenue stream we expect.
+ - Current revenue is 63.44 Doubloons per capita
+ - At Year 1, expected revenue of 72 Doubloons per capita
+ - At Year 4, we expect to increase rights to 100 Doubloons per capita
+ - At Year 6, we expect to be competing for FSA titles and securing a long-term deal at approximately 140 Doubloons per capita
+
 
 **Social Media**
 
