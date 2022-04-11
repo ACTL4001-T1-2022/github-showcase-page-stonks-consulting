@@ -23,7 +23,7 @@ An Answer Set Programming ([Cringo](https://potassco.org/clingo/run/)) approach 
 
 As shown above, the best team was formed under a 4-3-3 formation and the players selected are:
 
-|Player|Position|Individual Metric|Chemistry Adjusted Metric|Salary + Loan Fee|
+|**Player**|**Position**|**Individual Metric**|**Chemistry Adjusted Metric**|**Salary + Loan Fee**|
 |:---|:---|:---|:---|:---|
 |F. Akumu|GK|857|892|5,600,000|
 |C. Kakayi|DF|523|544|7,308,400|
@@ -43,7 +43,13 @@ To calculate the sensitivity of the “Starting Team”, each player in the team
 
 In relation to implementation, we deconstructed Commissioner Bayes objectives into four separate problems, and designed each solution around our team selection tool:
 
-![Solution Table](https://user-images.githubusercontent.com/103341948/162708076-1b9809f5-adad-41fc-8e83-f465fd348958.png)
+|            **Problem**               | **Designed Solution**              |
+| :----------------------------------- | :--------------------------------- |
+| Which players should be loaned?      | Players that:<ul><li>increase/are expected to increase the “Team Metric”</li><li>play in leagues “A”,”B”,”C” or RFL</li><li>have played more than 3 league games</li><li>are within the required age range for a particular team</li></ul> | 
+| When should players be loaned?       | Whenever financially and logistically possible |
+| Which players should be loaned out?  | Players that:<ul><li>are underperforming compared to their projected Individual Metric</li><li>are older than 29 years old</li><li>can be replaced by another player that increases the Team Metric</li></ul>|
+| When should players be loaned out?   | Whenever logistically possible |
+
 
 Our tool will be utilized as often as possible by Rarita to maximise the likelihood of achieving Commissioner Bayes objectives. 
 
