@@ -214,11 +214,11 @@ Benchmarked against data from global industry markets, we calculated the added i
  ![newplot](https://user-images.githubusercontent.com/103188193/162727554-70c39490-ddef-49e0-acfa-2fe95744cc9a.png)
 
 **Unemployment Rate**
-- This metric was not provided in the Rarita Data. However we believe it is an important metric to monitor in relation to Rarita’s football plans as it plays a major role in developing Rarita's industries, education sector as well as sociodemographics. 
+- This metric was not provided in the Rarita data. However we believe it is an important metric to monitor in relation to Rarita’s football plans as it plays a major role in developing Rarita's industries, education sector as well as sociodemographics. 
 - To proxy Rarita's unemployment rate, we utilised external World Bank data on selected regions and income groups. We have selected regions and income groups rather than individual countries as we believe the larger sample size incorporated into the data allows for more reliable models to be developed. 
 - A linear regression is conducted on the various regions and income groups using explanatory variable GDP per Capita growth, Inflation, Healthcare Expenditure and Household Savings.
 - Individual models were then fitted on Rarita's economic data to arrive as a proxy unemployment rate. As such the assumption is that the coefficients of the fitted models reflect those of Rarita and that the dynamics driving the economy (and by extension unemployment) in the two are similar. 
-- Linear regression models fitted on World and OECD members groups demonstrated the best ability to predict unseen data. 
+- Linear regression models fitted on World and OECD members groups demonstrated the best ability to predict unseen data (here post-2016 was used as test data)
 
 |![Picture4](https://user-images.githubusercontent.com/103188193/162737943-29cf35a1-57aa-4acb-92e6-11b2edd1c962.png)|![Picture5](https://user-images.githubusercontent.com/103188193/162738002-79a6582f-cc16-4914-9cbd-8f2b44cb1b6b.png)|
 
@@ -231,15 +231,15 @@ Benchmarked against data from global industry markets, we calculated the added i
 
 <img width="289" alt="Picture12" src="https://user-images.githubusercontent.com/103188193/162738421-2baac30d-874e-4778-95b2-a89543334be7.png">
 
-- As the unemployment rate is only a proxied measure, we have used pandemic and football impact loadings and 3-year running averages to project unemployment. Assuming a conservative 4:1 relationship between GPD per capita growth and unemployment by Okun's Law, we have applied pandemic reversal loading in 2021 and 2022 as we expect strong GDP growth and rising inflation (Phillip's curve) leading to reduction in unemployment. Using revenue/expense analysis and the impact of the implementation plan on Rarita's GDP, we have similarly included a loading which reduced unemployment as Rarita's industries grow and jobs are created by infrastructure such as the new stadium. 
+- As the unemployment rate is only a proxied measure, we have used pandemic and football impact loadings and 3-year running averages to project unemployment. Assuming a conservative 4:1 relationship between GPD per capita growth and unemployment by Okun's Law, we have applied pandemic reversal loading in 2021 and 2022 as we expect strong GDP growth and rising inflation (Phillip's curve) to drive declining unemployment rates. Using revenue/expense analysis and the impact of the implementation plan on Rarita's GDP, we have similarly included a loading which reduces the unemployment rate as Rarita's industries grow and jobs are created by infrastructure such as the new stadium. 
 
 ![Picture3](https://user-images.githubusercontent.com/103188193/162738510-5c5de382-f072-4bcd-a3a1-49a48ebe6c7a.png)
 
 **Healthcare Expenditure and Household savings**
-- Initially, a Vector Autoregression (VAR) model was considered such that the variables GDP per Capita growth, Inflation, Unemployment Rate, Healthcare Expenditure and Household Savings could be used in a multivariate setting to predict one another. The model however is overly complicated and while performing well on the training data shows overfitting when applied to the test dataset. It is therefore unreliable in projecting the variables listed above. 
+- Initially, a Vector Autoregression (VAR) model was considered such that the variables GDP per Capita growth, Inflation, Unemployment Rate, Healthcare Expenditure and Household Savings could be used in a multivariate setting to predict one another. The model, however, is overly complicated and while performing well on the training data shows overfitting when applied to the test dataset. It is therefore unreliable in projecting the variables listed above. 
 - As such, we have only projected healthcare expenditure and household savings using the VAR models that were selected in Excel.
 - Models fitted on World Bank data are tested on the unseen Rarita data which acts as a test set. Overall the World, upper-middle income and OECD members groups' models are able to accurately predict Rarita's historic healthcare expenditure and household savings. 
-- A simple average between the model above is taken to fit to Rarita historicals and project future rates. 
+- A simple average between the model above is taken to fit to Rarita historicals and project future rates. Projections show stability indicating minimal overfitting.
 
 |![Picture1](https://user-images.githubusercontent.com/103188193/162738608-c0c3d35b-c782-4081-bd46-f9c114010335.png)|![Picture2](https://user-images.githubusercontent.com/103188193/162738638-bcd0b01f-3770-4325-87f1-24bafb9688d9.png)|
 
