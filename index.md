@@ -1,5 +1,5 @@
 # SOA Case Study 2022: Rarita's National Football Team ⚽
-![](giphy.gif)
+![](giphyy.gif)
 
 ---
 ## Project Outline
