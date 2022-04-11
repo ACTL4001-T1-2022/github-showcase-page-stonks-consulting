@@ -23,19 +23,7 @@ An Answer Set Programming ([Cringo](https://potassco.org/clingo/run/)) approach 
 
 As shown above, the best team is formed under a 4-3-3 formation and the players selected are:
 
-|**Player**|**Position**|**Individual Metric**|**Chemistry Adjusted Metric**|**Salary + Loan Fee**|
-|:---|:---|:---|:---|:---|
-|F. Akumu|GK|857|892|5,600,000|
-|C. Kakayi|DF|523|544|7,308,400|
-|C. Baluka|DF|792|840|7,760,000|
-|S. Rizzo|DF|739|769|6,461,400|
-|X. Takagi|DF|1000|1020|4,810,000|
-|R. Jimenez|MF|718|809|16,340,000|
-|V. Persson|MF|64|64|11,749,100|
-|L. Leibowitz|MF|1000|1082|8,600,000|
-|P. Villa|FW|647|714|35,290,000|
-|P. Rabiu|FW|688|760|36,060,000|
-|Z. Zziwa|FW|1000|1104|9,120,000|
+
 
 We then selected a “Reserve Team” of eleven young players that are expected to peak in performance in the next 5-10 years. Our belief is that developing these young players within Rarita will be cheaper and more effective then loaning international players. The total cost of this team is ∂76,543,900.
 
