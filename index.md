@@ -84,8 +84,12 @@ To measure the long-term financial sustainability of Rarita’s club, we monitor
 **GDP per Capita**
 projected using Monte-Carlo simulations will have a $23.7bn growth by the end of 10 years, reaching $35,300 by 2030/
 
+<img width="510" alt="Screen Shot 2022-04-11 at 6 52 18 pm" src="https://user-images.githubusercontent.com/103412094/162703270-07b8e7f9-2a13-4417-915c-ae579d87e62a.png">
+
+
 **GNI per Capita**
 projected using Monte-Carlo simulations, will grow to $39,900 by 2030.
+<img width="552" alt="Screen Shot 2022-04-11 at 6 53 00 pm" src="https://user-images.githubusercontent.com/103412094/162703282-256f6d9a-570f-411b-b456-b8c369c7d3d2.png">
 
 
 
