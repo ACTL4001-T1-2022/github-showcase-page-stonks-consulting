@@ -44,6 +44,18 @@ The aim is to sell rights of broadcasting Rarita games to television companies o
 
 While our largest sources of revenue will be broadcasting rights and sponsorships, we expect social media to play a large role in popularizing Rarita’s team. This is evident in the correlation between a team’s past success and its social media following. Initiatives such as player interviews, behind the scene insights and matchday reviews led by a dedicated social media team will enhance fan following and encourage matchday attendance, whilst maintaining key sponsors. Additional revenue from a strong social media may be reinvested in supporting associated industries such as tourism and hospitality. 
 
+**Staff Expenses**
+
+Currently, staff expenses for competitive teams are larger in dollar terms (greater proportion of GDP), however we do not see correlation in terms of annual staff expense growth which is 6% across all nations.
+Current expenses at 98.25 Doubloon per capita
+Initial expenses to grow at 6% per capita each year
+At Year 6, we expect an increase of growth rate to around 7.5% per capita
+
+**Other Expenses** 
+
+We expect rent and facility management to grow by 10% each year
+With the stadium expected to be completed at the end of Year 3, we expect a one-off larger increase in expenses for that year
+
 Estimated revenues and expenses on a yearly timeline are outlined below (all values expressed as Rarita Doubloons per capita)
 
 Year | Matchday | Sponsor | Broadcast | Staff | Other | UIUD Profit | **Expected Profit**
