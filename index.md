@@ -1,5 +1,5 @@
 # SOA Case Study 2022: Rarita's National Football Team ⚽
-![](giphyy.gif)
+![](giphy.gif)
 
 ---
 ## Project Outline
@@ -154,7 +154,8 @@ To measure the long-term financial sustainability of Rarita’s club, we monitor
 
 
 #### **Household Savings and Health Expenditure** 
-- Expected to remain flat through the next 10 years
+- Expected to remain mostly flat through the next 10 years
+- As Rarita's economy matures, it will shift to from producing goods to services, thus expanding its financial sector. Due to Rarita's maturing financial sector, the household savings rate will grow slightly approaching 9% by 2030.
 - Impacts resulting from the implementation plan will be immaterial
 
 #### **Inflation**
@@ -178,6 +179,68 @@ Benchmarked against data from global industry markets, we calculated the added i
 - Tourism (5.05% CAGR)
 - Transport (1.93% CAGR)
 
+## Modelling and Assumptions
+
+### Economic Metrics
+
+#### **Population Growth**
+- We have used an ARIMA(0, 2, 2) model based on Holt's linear trend (double exponential smoothing) method to forecast population growth to 2030. 
+
+<img width="912" alt="newplot (15)" src="https://user-images.githubusercontent.com/103188193/162724240-eea9a089-8f22-409a-b28d-9e5ae678c1f5.png">
+
+- As the population of Rarita is clearly an upward trending function, the Holt's linear trend helps in dealing with this trending data. The ACF spike at lag 0 further supports the case for a ARIMA(0, 2, 2) model.
+
+<img width="912" alt="newplot (15)" src="https://user-images.githubusercontent.com/103188193/162723591-d3cb2c2f-f526-4e74-b1ef-4b3be200fef2.png">
+
+- Projections show stable population growth at 0.4% per annum to 13.1 million by 2030.  
+![newplot (14)](https://user-images.githubusercontent.com/103188193/162723499-aca53f25-ce12-4e5e-b774-35f6210ecf97.png)
+
+- Overall, football is likely to have a negligible impact on population growth. 
+
+#### **GDP per Capita**
+- The Monte Carlo method assumes that year-on-year GDP per Capita growth is a normally distributed random variable ~ N(0.02745, 0.00115).
+
+#### **GNI per Capita**
+- The Monte Carlo method assumes that year-on-year GDP per Capita growth is a normally distributed random variable ~ N(0.02273, 0.00121).
+
+#### **Inflation Rate**
+- We have selected an ARMA(1, 1) model based on the Akaike Information Criterion (AIC). The heatmap below shows the p and q values (x and y-axes respectively) for which the AIC is minimised. 
+
+![newplot (13)](https://user-images.githubusercontent.com/103188193/162727183-7e438ea1-83ca-4463-96c0-400617d24daa.png)
+
+- While the AIC is minimised under a MA(2) model, the ARMA(1, 1) model offers similar model fitting allowing for better smoothing. Additionally, it reflects our projection that the pandemic will put increase inflation in the short-run followed by a gradual decline to the long-run average of 3%.
+
+ ![newplot](https://user-images.githubusercontent.com/103188193/162727554-70c39490-ddef-49e0-acfa-2fe95744cc9a.png)
+
+#### **Unemployment Rate**
+- This metric was not provided in the Rarita Data. However we believe it is an important metric to monitor in relation to Rarita’s football plans as it plays a major role in developing Rarita's industries, education sector as well as sociodemographics. 
+- To proxy Rarita's unemployment rate, we utilised external World Bank data on selected regions and income groups. We have selected regions and income groups rather than individual countries as we believe the larger sample size incorporated into the data allows for more reliable models to be developed. 
+- A linear regression is conducted on the various regions and income groups using explanatory variable GDP per Capita growth, Inflation, Healthcare Expenditure and Household Savings.
+- Individual models were then fitted on Rarita's economic data to arrive as a proxy unemployment rate. As such the assumption is that the coefficients of the fitted models reflect those of Rarita and that the dynamics driving the economy (and by extension unemployment) in the two are similar. 
+- Linear regression models fitted on World and OECD members groups demonstrated the best ability to predict unseen data. 
+
+Images here
+
+- Rarita's economic metrics align more closely World group and the OECD member group's R-squared highlights a superior fit. 
+
+Images here
+
+- As such a simple average between World and OECD member proxies is selected to arrive at Rarita's historic unemployment rate. The historical average of 6.5% is reasonable and justifiable given Rarita's economic metrics. 
+- However, the model is unable to predict the effects of the pandemic in 2020. A loading of 20% has been applied based on the average changes in unemployment seen across the world. 
+
+Image here
+
+- As the unemployment rate is only a proxied measure, we have used pandemic and football impact loadings and 3-year running averages to project unemployment. Assuming a conservative 4:1 relationship between GPD per capita growth and unemployment by Okun's Law, we have applied pandemic reversal loading in 2021 and 2022 as we expect strong GDP growth and rising inflation (Phillip's curve) leading to reduction in unemployment. Using revenue/expense analysis and the impact of the implementation plan on Rarita's GDP, we have similarly included a loading which reduced unemployment as Rarita's industries grow and jobs are created by infrastructure such as the new stadium. 
+
+Image here
+
+#### **Healthcare Expenditure and Household savings**
+- Initially, a Vector Autoregression (VAR) model was considered such that the variables GDP per Capita growth, Inflation, Unemployment Rate, Healthcare Expenditure and Household Savings could be used in a multivariate setting to predict one another. The model however is overly complicated and while performing well on the training data shows overfitting when applied to the test dataset. It is therefore unreliable in projecting the variables listed above. 
+- As such, we have only projected healthcare expenditure and household savings using the VAR models that were selected in Excel.
+- Models fitted on World Bank data are tested on the unseen Rarita data which acts as a test set. Overall the World, upper-middle income and OECD members groups' models are able to accurately predict Rarita's historic healthcare expenditure and household savings. 
+- A simple average is taken to fit to Rarita historicals and project future rates. 
+
+Images here
 
 ## Risk Considerations
 Forming a competative football team is a difficult undertaking and is subject to a broad range of risks. A risk analysis was completed to identify key risks faced by the team, the potential impact, and measures to mitigate the risk. 
