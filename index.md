@@ -78,6 +78,9 @@ To measure the long-term financial sustainability of Rarita’s club, we monitor
  - Team’s youth development KPIs: conversion rate to a professional contract, number of international caps won by home players whilst playing for club
  - Player trading performance: sell-on value of player registrations divided by the purchase value, indicating scouting talent ability
 
+<img width="1313" alt="Screen Shot 2022-04-11 at 7 33 09 pm" src="https://user-images.githubusercontent.com/103308390/162711704-5aa6c8ba-4b61-4a76-acdb-dedfdaa7b086.png">
+
+<img width="1303" alt="Screen Shot 2022-04-11 at 7 33 30 pm" src="https://user-images.githubusercontent.com/103308390/162711380-82be3527-1ff5-4f56-93d1-3ebb584c6550.png">
 
 ## Economic Impact
 
