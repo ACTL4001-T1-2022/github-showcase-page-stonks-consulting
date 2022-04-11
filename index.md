@@ -23,6 +23,9 @@ We hope to make revenue from selling memberships and season ticket passes to sup
 
 Finding sponsorships allows private investment into the team and provides the team with capital to spend on improving resources. The aim is to make early investments into hiring a sponsorship committee who will be devoted to creating sponsorship packages and then researching potential sponsors to partner with. As the club becomes more competitive and popular, we expect the sponsorship deals to increase in size and provide more revenue, goods and services for the club.
 
+**Broadcasting**
+
+The aim is to sell rights of broadcasting Rarita games to television companies on small-term contracts. Then, as the popularity and competitive nature of the team increases, we expect to sign longer-term contracts for higher deals. This is the biggest revenue stream we expect. 
 
 @ Prav and Yatty
 Year | Matchday | Sponsor | Broadcast | Staff | Other | UIUD Profit | **Expected Profit**
