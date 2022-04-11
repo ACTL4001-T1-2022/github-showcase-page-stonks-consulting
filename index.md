@@ -83,7 +83,7 @@ To measure the long-term financial sustainability of Rarita’s club, we monitor
 
 **GDP per Capita**
 - Projected using Monte-Carlo simulations 
-- $23.7bn growth by the end of 10 years, 
+- $23.7bn expected growth by the end of 10 years 
 - Expected to reach $35,300 by 2030
 
 <img width="510" alt="Screen Shot 2022-04-11 at 6 52 18 pm" src="https://user-images.githubusercontent.com/103412094/162703270-07b8e7f9-2a13-4417-915c-ae579d87e62a.png">
@@ -112,8 +112,14 @@ To measure the long-term financial sustainability of Rarita’s club, we monitor
 
 
 **Related industries**
-positively impacted include the sports betting, manufacturing, hospitality, tourism and transport industries.
+Benchmarked against data from global industry markets, we calculated the added impact on CAGR, from Rarita’s football team. The industries positively impacted include:
+- Sports betting (4.92% CAGR)
+- Manufacturing (2.4% CAGR)
+- Hospitality (7.29% CAGR)
+- Tourism (5.05% CAGR)
+- Transport (1.93% CAGR)
 
+![image](https://user-images.githubusercontent.com/103412094/162709620-87b20302-fd79-42d1-af02-7ae1a0ce7ff8.png)
 
 
 
