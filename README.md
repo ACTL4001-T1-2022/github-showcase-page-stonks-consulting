@@ -14,6 +14,10 @@ The potential economic impacts of the team were also assessed, and given the unc
 @ Callum
 ## Implementation Plan
 @ Prav and Yatty
+Year | Matchday | Sponsor | Broadcast | Staff | Other |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 1 | 25 | 78 | 72 | -98.25 | -50.44 |
+
 ## Economic Impact
 @ Karina
 ## Risk Considerations
