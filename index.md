@@ -81,7 +81,7 @@ To measure the long-term financial sustainability of Rarita’s club, we monitor
 
 ## Economic Impact
 
-**GDP per Capita**
+#### **GDP per Capita**
 - Projected using Monte-Carlo simulations 
 - $23.7bn expected growth by the end of 10 years 
 - Expected to reach $35,300 by 2030
@@ -89,38 +89,36 @@ To measure the long-term financial sustainability of Rarita’s club, we monitor
 <img width="510" alt="Screen Shot 2022-04-11 at 6 52 18 pm" src="https://user-images.githubusercontent.com/103412094/162703270-07b8e7f9-2a13-4417-915c-ae579d87e62a.png">
 
 
-**GNI per Capita**
+#### **GNI per Capita**
 - Projected using Monte-Carlo simulations
 - Expected to grow to $39,900 by 2030
 <img width="552" alt="Screen Shot 2022-04-11 at 6 53 00 pm" src="https://user-images.githubusercontent.com/103412094/162703282-256f6d9a-570f-411b-b456-b8c369c7d3d2.png">
 
 
-**Household Savings and Health Expenditure** 
+#### **Household Savings and Health Expenditure** 
 - Expected to remain flat through the next 10 years
 - Impacts resulting from the implementation plan will be immaterial
 
-**Inflation**
+#### **Inflation**
 - Expected to increase in 2021 in the aftermath of the pandemic 
 - Using an ARMA model, it gradually subsides to the long term average: 3%
 
 <img width="432" alt="Screen Shot 2022-04-11 at 7 10 28 pm" src="https://user-images.githubusercontent.com/103412094/162704200-b4056f38-f615-49f9-8288-96239efee40d.png">
 
 
-**Unemployment Rate** 
+#### **Unemployment Rate** 
 - Historically was estimated to be approx. 6.5%
 - Projections are stable with unemployment gradually declining to 5% 
 
 
-**Related industries**
+#### **Related industries**
+
 Benchmarked against data from global industry markets, we calculated the added impact on CAGR, from Rarita’s football team. The industries positively impacted include:
 - Sports betting (4.92% CAGR)
 - Manufacturing (2.4% CAGR)
 - Hospitality (7.29% CAGR)
 - Tourism (5.05% CAGR)
 - Transport (1.93% CAGR)
-
-![image](https://user-images.githubusercontent.com/103412094/162709620-87b20302-fd79-42d1-af02-7ae1a0ce7ff8.png)
-
 
 
 ## Risk Considerations
