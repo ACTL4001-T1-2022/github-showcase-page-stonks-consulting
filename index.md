@@ -71,6 +71,13 @@ Estimated revenues and expenses on a yearly timeline are outlined below (all val
 | 9 | 35.89 | 137.81 | 154.34 | -165.65 | -108.12 | 54.27 | **70.31** |
 | 10 | 37.69 | 148.84 | 169.78 | -178.07 | -118.93 | 59.29 | **78.94** |
 
+### Key Monitoring Metrics
+
+To measure the long-term financial sustainability of Rarita’s club, we monitor indicators on a yearly basis: 
+ - Operating profit: gross margin of key commercial activities, borrowings ratio, staff costs as a percentage of total turnover
+ - Team’s youth development KPIs: conversion rate to a professional contract, number of international caps won by home players whilst playing for club
+ - Player trading performance: sell-on value of player registrations divided by the purchase value, indicating scouting talent ability
+
 
 ## Economic Impact
 
