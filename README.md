@@ -54,23 +54,116 @@ In relation to implementation, we deconstructed Commissioner Bayes objectives in
 Our tool will be utilized as often as possible by Rarita to maximise the likelihood of achieving Commissioner Bayes objectives. 
 
 ## Implementation Plan
-@ Prav and Yatty
-Year | Matchday | Sponsor | Broadcast | Staff | Other | UIUD Profit | **Expected Profit**
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| 1 | 25.00 | 78.00 | 72.00 | -98.25 | -50.44 | 26.31 | **27.23**
-| 2 | 26.00 | 83.46 | 79.20 | -104.15 | -55.48 | 29.03 | **31.03**
-| 3 | 27.04 | 89.30 | 87.12 | -110.40 | -61.03 | 32.03 | **35.26**
-| 4 | 28.12 | 95.55 | 95.83 | -117.02 | -67.14 | 35.35 | **40.00**
-| 5 | 29.53 | 102.24 | 105.42 | -124.04 | -73.85 | 39.30 | **45.69**
-| 6 | 31.00 | 109.40 | 115.96 | -133.34 | -81.23 | 41.78 | **49.91**
-| 7 | 32.55 | 118.15 | 127.55 | -143.34 | -89.36 | 45.56 | **55.91**
-| 8 | 34.19 | 127.60 | 140.31 | -154.09 | -98.29 | 49.71 | **62.67**
-| 9 | 35.89 | 137.81 | 154.34 | -165.65 | -108.12 | 54.27 | **70.31**
-| 10 | 37.69 | 148.84 | 169.78 | -178.07 | -118.93 | 59.29 | **78.94**
 
+### Revenues & Expenses
+**Matchday**
+
+We hope to make revenue from selling memberships and season ticket passes to supporters. From the outset, the aim is to sell memberships cheaper to appeal to the masses (Central/West Rarita). As the team becomes more competitive and more popular, the memberships should increase and as such we can adequately monitor and optimise the price to maximise revenue using economic modelling. The figures below were determined by assessing the average growth in match day revenue and correlating to positions finished in the respective national tournaments.
+ - Current revenue is 24.63 Doubloons per capita
+ - An expected increase of 4% per capita each year
+ - Upon the completion of stadium building, we expect a one-year abnormal increase in match-day sales
+
+
+**Sponsorships**
+
+Finding sponsorships allows private investment into the team and provides the team with capital to spend on improving resources. The aim is to make early investments into hiring a sponsorship committee who will be devoted to creating sponsorship packages and then researching potential sponsors to partner with. As the club becomes more competitive and popular, we expect the sponsorship deals to increase in size and provide more revenue, goods and services for the club. The figures we have calculated reflect that sponsorship revenue was closely correlated to nations with high GDP.
+ - Current revenue is 75.06 Doubloons per capita
+ - We expect to receive close to 7% per capita increase in revenue each year
+ - By Year 10, we expect to receive 150 Doubloons per capita from sponsorships and advertising
+
+
+**Broadcasting**
+
+The aim is to sell rights of broadcasting Rarita games to television companies on small-term contracts. Then, as the popularity and competitive nature of the team increases, we expect to sign longer-term contracts for higher deals. This is the biggest revenue stream we expect.
+ - Current revenue is 63.44 Doubloons per capita
+ - At Year 1, expected revenue of 72 Doubloons per capita
+ - At Year 4, we expect to increase rights to 100 Doubloons per capita
+ - At Year 6, we expect to be competing for FSA titles and securing a long-term deal at approximately 140 Doubloons per capita
+
+
+**Social Media**
+
+While our largest sources of revenue will be broadcasting rights and sponsorships, we expect social media to play a large role in popularizing Rarita’s team. This is evident in the correlation between a team’s past success and its social media following. Initiatives such as player interviews, behind the scene insights and matchday reviews led by a dedicated social media team will enhance fan following and encourage matchday attendance, whilst maintaining key sponsors. Additional revenue from a strong social media may be reinvested in supporting associated industries such as tourism and hospitality. 
+
+**Staff Expenses**
+
+Currently, staff expenses for competitive teams are larger in dollar terms (greater proportion of GDP), however we do not see correlation in terms of annual staff expense growth which is 6% across all nations.
+ - Current expenses at 98.25 Doubloon per capita
+ - Initial expenses to grow at 6% per capita each year
+ - At Year 6, we expect an increase of growth rate to around 7.5% per capita
+
+**Other Expenses** 
+
+- We expect rent and facility management to grow by 10% each year
+- With the stadium expected to be completed at the end of Year 3, we expect a one-off larger increase in expenses for that year
+
+Estimated revenues and expenses on a yearly timeline are outlined below (all values expressed as Rarita Doubloons per capita)
+
+| Year | Matchday | Sponsor | Broadcast | Staff | Other | UIUD Profit | **Expected Profit** |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 1 | 25.00 | 78.00 | 72.00 | -98.25 | -50.44 | 26.31 | **27.23** |
+| 2 | 26.00 | 83.46 | 79.20 | -104.15 | -55.48 | 29.03 | **31.03** |
+| 3 | 27.04 | 89.30 | 87.12 | -110.40 | -61.03 | 32.03 | **35.26** |
+| 4 | 28.12 | 95.55 | 95.83 | -117.02 | -67.14 | 35.35 | **40.00** |
+| 5 | 29.53 | 102.24 | 105.42 | -124.04 | -73.85 | 39.30 | **45.69** |
+| 6 | 31.00 | 109.40 | 115.96 | -133.34 | -81.23 | 41.78 | **49.91** |
+| 7 | 32.55 | 118.15 | 127.55 | -143.34 | -89.36 | 45.56 | **55.91** |
+| 8 | 34.19 | 127.60 | 140.31 | -154.09 | -98.29 | 49.71 | **62.67** |
+| 9 | 35.89 | 137.81 | 154.34 | -165.65 | -108.12 | 54.27 | **70.31** |
+| 10 | 37.69 | 148.84 | 169.78 | -178.07 | -118.93 | 59.29 | **78.94** |
+
+### Key Monitoring Metrics
+
+To measure the long-term financial sustainability of Rarita’s club, we monitor indicators on a yearly basis: 
+ - Operating profit: gross margin of key commercial activities, borrowings ratio, staff costs as a percentage of total turnover
+ - Team’s youth development KPIs: conversion rate to a professional contract, number of international caps won by home players whilst playing for club
+ - Player trading performance: sell-on value of player registrations divided by the purchase value, indicating scouting talent ability
+
+<img width="1313" alt="Screen Shot 2022-04-11 at 7 33 09 pm" src="https://user-images.githubusercontent.com/103308390/162711704-5aa6c8ba-4b61-4a76-acdb-dedfdaa7b086.png">
+
+<img width="1303" alt="Screen Shot 2022-04-11 at 7 33 30 pm" src="https://user-images.githubusercontent.com/103308390/162711380-82be3527-1ff5-4f56-93d1-3ebb584c6550.png">
 
 ## Economic Impact
-@ Karina
+
+#### **GDP per Capita**
+- Projected using Monte-Carlo simulations 
+- $23.7bn expected growth by the end of 10 years 
+- Expected to reach $35,300 by 2030
+
+<img width="510" alt="Screen Shot 2022-04-11 at 6 52 18 pm" src="https://user-images.githubusercontent.com/103412094/162703270-07b8e7f9-2a13-4417-915c-ae579d87e62a.png">
+
+
+#### **GNI per Capita**
+- Projected using Monte-Carlo simulations
+- Expected to grow to $39,900 by 2030
+<img width="552" alt="Screen Shot 2022-04-11 at 6 53 00 pm" src="https://user-images.githubusercontent.com/103412094/162703282-256f6d9a-570f-411b-b456-b8c369c7d3d2.png">
+
+
+#### **Household Savings and Health Expenditure** 
+- Expected to remain flat through the next 10 years
+- Impacts resulting from the implementation plan will be immaterial
+
+#### **Inflation**
+- Expected to increase in 2021 in the aftermath of the pandemic 
+- Using an ARMA model, it gradually subsides to the long term average: 3%
+
+<img width="432" alt="Screen Shot 2022-04-11 at 7 10 28 pm" src="https://user-images.githubusercontent.com/103412094/162704200-b4056f38-f615-49f9-8288-96239efee40d.png">
+
+
+#### **Unemployment Rate** 
+- Historically was estimated to be approx. 6.5%
+- Projections are stable with unemployment gradually declining to 5% 
+
+
+#### **Related industries**
+
+Benchmarked against data from global industry markets, we calculated the added impact on CAGR, from Rarita’s football team. The industries positively impacted include:
+- Sports betting (4.92% CAGR)
+- Manufacturing (2.4% CAGR)
+- Hospitality (7.29% CAGR)
+- Tourism (5.05% CAGR)
+- Transport (1.93% CAGR)
+- 
 ## Risk Considerations
 Forming a competative football team is a difficult undertaking and is subject to a broad range of risks. A risk analysis was completed to identify key risks faced by the team, the potential impact, and measures to mitigate the risk. 
 #### Player Misconduct. 
