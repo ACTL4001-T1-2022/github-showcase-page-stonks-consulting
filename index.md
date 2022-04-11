@@ -53,6 +53,9 @@ To calculate the sensitivity of the “Starting Team”, each player in the team
 
 For each national team in the tournament data we calculated an "Attack Score" (total goals/maximum recorded number of games) and "Defense Score" (total times dribbled past*total errors/maximum recorded games). We then simulated 1000 knockout tournament games where the winner of each game was the nation with the highest difference between their Attack Score and the oppositions Defense Score. We added a randomly generated 0%-10% bonus to each nationals Attack/Defense score to simulate uncertainty. Out of 1000 simulations, our selected team won the tournament 402 times, and placed within the top 10 FSA nations 673 times.
 
+## Implementation Plan
+
+### Team Selection 
 **Team Selection Implementation Strategy**
 
 In relation to implementation, we deconstructed Commissioner Bayes objectives into four separate problems, and designed each solution around our team selection tool:
@@ -66,8 +69,6 @@ In relation to implementation, we deconstructed Commissioner Bayes objectives in
 
 
 Our tool will be utilized as often as possible by Rarita to maximise the likelihood of achieving Commissioner Bayes objectives. 
-
-## Implementation Plan
 
 ### Revenues & Expenses
 **Matchday**
