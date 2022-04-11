@@ -47,14 +47,14 @@ While our largest sources of revenue will be broadcasting rights and sponsorship
 **Staff Expenses**
 
 Currently, staff expenses for competitive teams are larger in dollar terms (greater proportion of GDP), however we do not see correlation in terms of annual staff expense growth which is 6% across all nations.
-Current expenses at 98.25 Doubloon per capita
-Initial expenses to grow at 6% per capita each year
-At Year 6, we expect an increase of growth rate to around 7.5% per capita
+ - Current expenses at 98.25 Doubloon per capita
+ - Initial expenses to grow at 6% per capita each year
+ - At Year 6, we expect an increase of growth rate to around 7.5% per capita
 
 **Other Expenses** 
 
-We expect rent and facility management to grow by 10% each year
-With the stadium expected to be completed at the end of Year 3, we expect a one-off larger increase in expenses for that year
+- We expect rent and facility management to grow by 10% each year
+- With the stadium expected to be completed at the end of Year 3, we expect a one-off larger increase in expenses for that year
 
 Estimated revenues and expenses on a yearly timeline are outlined below (all values expressed as Rarita Doubloons per capita)
 
