@@ -4,7 +4,7 @@
 ---
 ## Project Outline
 
-The goal of this assignment was to formulate a comprehensive plan for Rarita (a fictional country) to construct an internationally competitive football team. Criteria for a "competitive" team was defined as:
+The goal of this assignment was to formulate a comprehensive plan for Rarita (a fictional country) to construct an internationally competitive football team. Criteria for a "competitive" team was defined within the [SOA Student Case Study 2022](https://www.soa.org/globalassets/assets/files/static-pages/research/opportunities/2022-student-research-case-study.pdf) as:
 >1. Rank within the top 10 members of the FSA for the season within the next 5 years.
 >2. Have a high probability of achieving an FSA championship within the next 10 years.
 
