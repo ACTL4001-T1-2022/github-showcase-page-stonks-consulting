@@ -58,7 +58,7 @@ For each national team in the tournament data we calculated an "Attack Score" (t
 ### Team Selection 
 **Team Selection Implementation Strategy**
 
-In relation to implementation, we deconstructed Commissioner Bayes objectives into four separate problems, and designed each solution around our team selection tool:
+Our implementation plan is structured using the three stages of the Actuarial Control Cycle. We deconstructed Commissioner Bayes objectives into four separate problems, and designed each solution around our team selection tool:
 
 |            **Problem**               | **Designed Solution**              |
 | :----------------------------------- | :--------------------------------- |
@@ -67,8 +67,7 @@ In relation to implementation, we deconstructed Commissioner Bayes objectives in
 | Which players should be loaned out?  | Players that: are underperforming compared to their projected Individual Metric, are older than 29 years old, can be replaced by another player that increases the Team Metric|
 | When should players be loaned out?   | Whenever logistically possible |
 
-
-Our tool will be utilized as often as possible by Rarita to maximise the likelihood of achieving Commissioner Bayes objectives. 
+Our tool will be utilized as often as possible by Rarita to maximise the Team Metric, which improves the likelihood of achieving Commissioner Bayes objectives. In addition, regularly utilizing our tool will allow Rarita to update assumptions or metrics and address any discrepancies between the projected and observed performance of players.
 
 ### Revenues & Expenses
 **Matchday**
